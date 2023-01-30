@@ -1,0 +1,3 @@
+(function(){var loadHandler=window['sl_{D78D84DB-9B4E-455A-9A32-19FADF065D7F}'];loadHandler&&loadHandler(16, '<div id="spr0_5fddaa0"><div id="spr1_5fddaa0" class="kern slide"><img id="img1_5fddaa0" src="data/img5.jpg" width="1280px" height="720px" alt="" style="left:0px;top:0px;"/></div><div id="spr2_5fddaa0" class="kern slide"><div id="spr3_5fddaa0" style="left:57px;top:59.25px;"><img id="img0_5fddaa0" src="data/img4.png" width="1127.25" height="540.75" alt="Когда-нибудь\
+Всё будет хорошо.\
+А пока терпи…"/></div></div></div>');})();
