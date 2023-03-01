@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<presentation availableOffline="1" guid="880AA8B7-29A0-404D-940F-77D00E214B59" version="0">
+	<info>
+		<title>nazvanie-kislot-2ur3</title>
+		<description/>
+	</info>
+	<files index="id21" thumbnail="id17" totalSize="4133838">
+		<file id="id0">data/apple-touch-icon.png</file>
+		<file id="id1">data/browsersupport.js</file>
+		<file id="id2">data/favicon.ico</file>
+		<file id="id3">data/fonts/fnt0.woff</file>
+		<file id="id4">data/fonts/fnt1.woff</file>
+		<file id="id5">data/fonts/fnt2.woff</file>
+		<file id="id6">data/fonts/fnt3.woff</file>
+		<file id="id7">data/html5-unsupported.html</file>
+		<file id="id8">data/html5.png</file>
+		<file id="id9">data/images/img-46d15fbbf87ede0afbc8d4b661447e5a10a52dde.jpg</file>
+		<file id="id10">data/images/img-65b0ff6e4f1e8dead4e75d948c269c9f3a171ed6.jpg</file>
+		<file id="id11">data/images/img-66f06b4797e25ec05a1cb708f5765134969b2e8a.jpg</file>
+		<file id="id12">data/images/img-80a47cff1e7fc08082c5fabb63278d9cf4379681.jpg</file>
+		<file id="id13">data/images/img-81bd45b4e623c7e4d73eb4d18ca20e71c13a726c.jpg</file>
+		<file id="id14">data/images/img-f778e94bc8ba7e2c2ac29ed85542b2f74a2bf391.jpg</file>
+		<file id="id15">data/ismplayer/app_store2x.png</file>
+		<file id="id16">data/ismplayer/play.svg</file>
+		<file id="id17">data/ismplayer/preview.png</file>
+		<file id="id18">data/ismplayer/style.css</file>
+		<file id="id19">data/ismplayer/style_mini.css</file>
+		<file id="id20">data/player.js</file>
+		<file id="id21">index.html</file>
+		<file id="id22">ismplayer.html</file>
+		<file id="id23">preview.png</file>
+	</files>
+</presentation>
+
