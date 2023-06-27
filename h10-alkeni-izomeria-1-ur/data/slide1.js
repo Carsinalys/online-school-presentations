@@ -1,0 +1,3 @@
+(function(){var loadHandler=window['sl_{0001EFDB-6FBD-4E0F-9323-183FBAB6C2CD}'];loadHandler&&loadHandler(0, '<div id="spr0_adf3a59"><div id="spr1_adf3a59" class="kern slide"><img id="img1_adf3a59" src="data/img1.png" width="960px" height="540px" alt="" style="left:0px;top:0px;"/></div><div id="spr2_adf3a59" class="kern slide"><div id="spr3_adf3a59" style="left:42px;top:53px;"><img id="img0_adf3a59" src="data/img0.png" width="867" height="367" alt="Структурные \
+изомеры \
+алкенов"/></div></div></div>', '{"s":[]}');})();
