@@ -1,0 +1,15 @@
+(function(){var loadHandler=window['sl_{D7A598B1-347A-450F-8011-DCDAE4EBBCDB}'];loadHandler&&loadHandler(3, '<div id="spr0_1dcc5b60"><div id="spr1_1dcc5b60" class="kern slide"><img id="img1_1dcc5b60" src="data/img0.png" width="960px" height="540px" alt="" style="left:0px;top:0px;"/></div><div id="spr2_1dcc5b60" class="kern slide"><div id="spr3_1dcc5b60"><div id="svg0_1dcc5b60" style="left:0px;top:0px;"><svg width="960" height="488" viewBox="0 0 960 488"><path fill="none" d="M0,0 h960 v487.414 h-960 Z"/></svg></div><div id="spr4_1dcc5b60" style="left:8px;top:11px;"><img id="img0_1dcc5b60" src="data/img3.png" width="939" height="468" alt="Рассчитаем по азоту количество водорода, вступившего в реакцию.\
+\
+       1N2 + 3H2 = 2NH3 , \
+\
+\
+х= 0,1575∗3 = 0,4725 моль\
+\
+n(H2) = 0,4725 моль вступило в реакцию и n(H2) = 0,58 моль осталось после реакции, значит, всего было 0,4725 + 0,58 = 1,0525 моль\
+\
+Рассчитаем массовую долю водорода в начальной смеси. \
+Начальная смесь состояла из азота n(N2)= 0,2625 моль и водорода n(H2) = 1,0525 моль. \
+m(N2)= 0,2625 ∗ 28 = 7,35 г;\
+m(H2) = 1,0525 ∗ 2 = 2,105 г;\
+m(смеси)= m(N2) + m(H2) = 7,35 + 2,105 = 9,455 г;\
+w(H2) =   2,105∗100 9,455  = 22,263% ≈ 22%"/></div><div id="svg1_1dcc5b60" style="left:29.502px;top:37.167px;"><svg width="70" height="32" viewBox="0 0 70 32"><path fill="none" d="M0,0 h69.32 v31.505 h-69.32 Z"/></svg></div><div id="spr5_1dcc5b60" style="left:29.502px;top:37.167px;"><div style="width:0px;"><span id="txt0_1dcc5b60" data-width="50.106445" style="left:7.2px;top:-6.945px;">0,1575</span></div><div style="width:0px;"><span id="txt1_1dcc5b60" data-width="39.304688" style="left:11.325px;top:5.412px;">моль</span></div></div><div id="svg2_1dcc5b60" style="left:29.502px;top:84.804px;"><svg width="72" height="30" viewBox="0 0 72 30"><path fill="none" d="M0,0 h71.38 v29.081 h-71.38 Z"/></svg></div><div id="spr6_1dcc5b60" style="left:29.502px;top:84.804px;"><div style="width:0px;"><span id="txt2_1dcc5b60" data-width="52.497070" style="left:7.2px;top:1.323px;">1 моль</span></div></div><div id="svg3_1dcc5b60" style="left:87.368px;top:84.794px;"><svg width="72" height="30" viewBox="0 0 72 30"><path fill="none" d="M0,0 h71.38 v29.081 h-71.38 Z"/></svg></div><div id="spr7_1dcc5b60" style="left:87.368px;top:84.794px;"><div style="width:0px;"><span id="txt3_1dcc5b60" data-width="52.497070" style="left:7.2px;top:1.323px;">3 моль</span></div></div><div id="svg4_1dcc5b60" style="left:90.625px;top:34.451px;"><svg width="63" height="30" viewBox="0 0 63 30"><path fill="none" d="M0,0 h62.166 v29.485 h-62.166 Z"/></svg></div><div id="spr8_1dcc5b60" style="left:90.625px;top:34.451px;"><div style="width:0px;"><span id="txt4_1dcc5b60" style="left:23.7px;top:-6.945px;">Х</span></div><div style="width:0px;"><span id="txt5_1dcc5b60" data-width="39.304688" style="left:11.325px;top:5.412px;">моль</span></div></div></div></div></div>', '{"s":[]}');})();
