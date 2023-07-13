@@ -1,4 +1,4 @@
-(function(){var loadHandler=window['sl_{D7A598B1-347A-450F-8011-DCDAE4EBBCDB}'];loadHandler&&loadHandler(1, '<div id="spr0_1dcc5a46"><div id="spr1_1dcc5a46" class="kern slide"><img id="img1_1dcc5a46" src="data/img0.png" width="960px" height="540px" alt="" style="left:0px;top:0px;"/></div><div id="spr2_1dcc5a46" class="kern slide"><div id="spr3_1dcc5a46" style="left:8px;top:11px;"><img id="img0_1dcc5a46" src="data/img1.png" width="943" height="513" alt="Проведем расчет.\
+(function(){var loadHandler=window['sl_{07FFDE4A-B291-44C8-BEF6-7DD28A66809E}'];loadHandler&&loadHandler(1, '<div id="spr0_1de92ce0"><div id="spr1_1de92ce0" class="kern slide"><img id="img1_1de92ce0" src="data/img0.png" width="960px" height="540px" alt="" style="left:0px;top:0px;"/></div><div id="spr2_1de92ce0" class="kern slide"><div id="spr3_1de92ce0" style="left:8px;top:11px;"><img id="img0_1de92ce0" src="data/img1.png" width="943" height="513" alt="Проведем расчет.\
 1N2 + 3H2 = 2NH3  \
 Предположим, что в реакцию вступило: 1 моль азота и 3 моля водорода, т.е. эквивалентное количество.\
 В соответствии с уравнением реакции аммиака должно быть получено 2 моль. \
