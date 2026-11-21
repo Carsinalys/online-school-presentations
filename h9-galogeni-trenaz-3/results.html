@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Лаборатория спасена — результаты и рефлексия</title>
+<link rel="stylesheet" href="assets/css/report-1.css"></head><body>
+<header class="hero"><div class="heroinner"><div class="report-brand"><img src="assets/media/element-24c7e08df47887.png" alt="М.И.Р."><a href="https://portalmir.by/" target="_blank" rel="noopener noreferrer">portalmir.by</a></div><div class="eyebrow">Авария в химической лаборатории · Финальный протокол</div><h1 id="heroTitle">РЕЗУЛЬТАТЫ <span>ОБУЧЕНИЯ</span></h1><p id="heroDescription">Посмотрим, что получилось хорошо и что стоит повторить.</p><div class="state"><div class="stat">Опасность: <b id="heroDanger">—</b></div><div class="stat">Восстановлено: <b id="heroRepair">—</b></div></div></div></header>
+<main class="container">
+<p class="intro" id="liveStatus">Это индивидуальный отчёт по сохранённым ответам. Здесь нет условных баллов и вымышленных ошибок.</p>
+<div class="grid">
+<section class="card"><h2>Итоги прохождения</h2><div class="metrics">
+<div class="metric"><span>Пройдено отсеков</span><b id="sections">—</b></div>
+<div class="metric"><span>Заданий подтверждено журналом</span><b id="correct">—</b></div>
+<div class="metric"><span>Правильно с первой попытки</span><b id="first">—</b></div>
+<div class="metric"><span>Ошибочных попыток</span><b id="errors">—</b></div>
+<div class="metric"><span>Обращений к подсказкам</span><b id="hints">—</b></div>
+<div class="metric"><span>Заданий с затруднениями</span><b id="difficult">—</b></div>
+</div><div class="note" id="coverage">Результаты появятся после прохождения игры через главную страницу.</div><p class="fineprint">Ошибочная попытка — неверный ответ, подтверждённый игрой. Простое переключение варианта до проверки ошибкой не считается.</p></section>
+<section class="card"><h2>Что стоит повторить</h2><div id="recommendations"></div><div class="flex" style="margin-top:15px"><button class="button primary" id="practiceBtn">Повторить трудные темы</button><button class="button secondary" id="retryBtn">Открыть нужный отсек</button></div><p class="fineprint">Повторение составляется по зафиксированным затруднениям. Если ошибок не было, появится сообщение о хорошем результате.</p></section>
+<section class="card full"><h2>Разбор заданий и ошибок</h2><div class="tablewrap"><table><thead><tr><th>Отсек и тема</th><th>Заданий с верным ответом</th><th>Ошибок</th><th>Подсказок</th><th>Что повторить</th></tr></thead><tbody id="breakdown"></tbody></table></div><div class="note" id="missingNote">В журнал включаются только действия после установки этой версии. Прошлые попытки нельзя достоверно восстановить.</div></section>
+<section class="card full"><h2>Моя рефлексия</h2><p class="muted">Эти ответы ученик заполняет сам — программа не решает за него, что было трудно.</p><div class="reflection">
+<div><label for="easy">Что у меня получилось лучше всего?</label><textarea id="easy" placeholder="Например: определять продукты реакции кислоты с металлами"></textarea><div class="prompt-choices"><label><input type="checkbox" id="confident"> Я могу объяснить некоторые реакции другому ученику</label><label><input type="checkbox" id="usedHints"> После подсказок я понял, как исправлять свои ошибки</label></div></div>
+<div><label for="hard">Что оказалось труднее всего?</label><textarea id="hard" placeholder="Например: расстановка коэффициентов в реакциях"></textarea><label for="plan" style="margin-top:11px">Что я повторю и потренирую?</label><textarea id="plan" style="min-height:66px" placeholder="Запиши свой небольшой план повторения"></textarea></div>
+</div><div class="ref-save" id="saved">Ответы сохраняются в этом браузере автоматически.</div></section>
+<section class="card full"><h2>Персональная тренировка</h2><div id="practice" class="quiz"><div class="small" id="practiceNumber"></div><h3 id="practiceQuestion"></h3><div id="practiceOptions" class="quiz-options"></div><div class="quiz-results" id="practiceFeedback"></div><div class="flex" style="margin-top:15px"><button class="button primary" id="practiceNext" disabled>Следующее задание</button><button class="button secondary" id="practiceClose">Закрыть тренировку</button></div></div><p class="muted" id="practiceEmpty">Выбери «Повторить трудные темы», чтобы получить короткую тренировку по своим ошибкам.</p></section>
+<section class="card full"><h2>Сохранить результат</h2><p class="muted">Отчёт можно скачать, распечатать или показать учителю. Данные хранятся в браузере, никуда автоматически не отправляются.</p><div class="flex"><button class="button primary" id="download">Скачать индивидуальный отчёт (HTML)</button><button class="button" id="print">Распечатать</button><a class="button secondary" href="index.html">В главное меню</a><button class="button warn" id="resetLog">Начать новый результат</button></div></section>
+</div></main><footer>Учебная игра «Авария в химической лаборатории» · Итоговый экран · Данные только из текущего браузера</footer>
+<script src="assets/js/report-1.js"></script>
+<script src="assets/js/report-2.js"></script>
+</body></html>

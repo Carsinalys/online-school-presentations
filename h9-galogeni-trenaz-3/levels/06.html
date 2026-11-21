@@ -1,0 +1,26 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Авария в химической лаборатории — Отсек 6: Металлический реактор</title><link rel="stylesheet" href="../assets/css/level06-1.css"><link rel="stylesheet" href="../assets/css/embedded-mobile-v3.css?v=3"></head><body>
+<main class="stage" id="stage" aria-label="Отсек 6: Металлический реактор">
+<img class="scene" src="../assets/media/level06-b12d629a4d927f.webp" alt="Аварийная химическая лаборатория: робот-манипулятор, конвейер с металлическими пластинами и стеклянный реактор">
+<div class="redAlert" aria-hidden="true"></div>
+<div class="topmeter danger"><span class="warning" aria-hidden="true">⚠</span><div class="topcopy"><span>УРОВЕНЬ ОПАСНОСТИ</span><strong id="dangerText">52%</strong><div class="tinybar"><i id="dangerFill"></i></div></div></div>
+<div class="titleTop"><strong>ОТСЕК № 6</strong><span>АВАРИЯ В МЕТАЛЛИЧЕСКОМ РЕАКТОРЕ</span></div>
+<div class="topmeter repair"><div class="topcopy"><span>ВОССТАНОВЛЕНИЕ</span><strong id="repairText">48%</strong><div class="tinybar"><i id="repairFill"></i></div></div></div>
+<button type="button" class="iconhot" id="soundBtn" title="Включить звук" aria-label="Включить звук">♫</button><button type="button" class="iconhot" id="helpBtn" title="Как играть" aria-label="Помощь">?</button><button type="button" class="iconhot" id="fullBtn" title="Полный экран" aria-label="Полный экран">⛶</button>
+<section class="question" aria-live="polite"><div class="counter" id="qCounter">ЗАДАНИЕ 1 ИЗ 5</div><div class="prompt" id="prompt"></div><div class="feedback" id="feedback"></div></section>
+<div class="robotClaw" id="robotClaw" aria-hidden="true"><span class="shaft"></span><span class="claw left"></span><span class="claw right"></span><span class="joint"></span></div>
+<div class="grabbedPiece" id="grabbedPiece" aria-hidden="true">Zn</div>
+<div class="gasLayer" id="gasLayer" aria-hidden="true"></div><div class="gasFlow" id="gasFlow" aria-hidden="true"><b></b><b></b><b></b></div>
+<div class="pressureLayer" id="pressureLayer" aria-hidden="true"><span class="gaugeLbl">ДАВЛЕНИЕ</span><span class="gaugeNeedle"></span><span class="gaugePivot"></span></div>
+<div class="controlPanel" id="controlPanel"><div class="ctrlTitle">РЕАКТОР · ДИАГНОСТИКА</div><div class="ctrlText" id="ctrlText">Ошибка подачи металлов</div><div class="ctrlHint" id="ctrlHint">Установка ожидает команду</div></div>
+<div class="beltDeck running" id="beltDeck" aria-label="Металлические пластины на конвейере"></div>
+<div class="selectionDeck" id="selectionDeck" hidden aria-label="Варианты ответа на приборе"></div>
+<div class="reactionEq" id="reactionEq" hidden></div>
+<button class="actionCheck" id="checkBtn" type="button" hidden>ПРОВЕРИТЬ ВЫБОР</button>
+<div class="bottomBack" aria-hidden="true"></div><nav class="sectors" id="sectors" aria-label="12 отсеков лаборатории"></nav><button type="button" class="nextbtn" id="nextBtn" disabled>ДАЛЕЕ ››</button>
+<div class="intro" id="intro"><div class="dialog"><h2>⚠ ОТСЕК № 6 — МЕТАЛЛИЧЕСКИЙ РЕАКТОР</h2><p>Робот перепутал металлические пластины. В реакторе с разбавленной соляной кислотой выделяется водород, а система дозирования работает неправильно.</p><p>Выбирай пластины на конвейере и варианты на приборе. В конце выбери <strong>все</strong> подходящие металлы и нажми «Проверить выбор». Здесь нет таймера.</p><button type="button" id="startBtn">НАЧАТЬ ОТСЕК 6</button></div></div>
+<div class="modal" id="modal" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><h2 id="modalTitle"></h2><p id="modalBody"></p><button type="button" id="closeBtn">ПОНЯТНО</button></div></div>
+</main><script src="../assets/js/level06-1.js"></script>
+<script src="../assets/js/level06-2.js"></script>
+<script src="../assets/js/level06-3.js"></script>
+<script src="../assets/js/level06-4.js"></script>
+</body></html>

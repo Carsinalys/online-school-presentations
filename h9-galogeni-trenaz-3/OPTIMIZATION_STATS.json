@@ -1,0 +1,255 @@
+{
+  "generated": "2026-11-21",
+  "original_total_bytes": 13668994,
+  "optimized_total_bytes": 2968683,
+  "assets": [
+    {
+      "filename": "level01-15aca5048ffe9c.webp",
+      "source_bytes": 2423837,
+      "new_bytes": 241740,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "element-24c7e08df47887.png",
+      "source_bytes": 64473,
+      "new_bytes": 64473,
+      "dimensions": [
+        690,
+        370
+      ],
+      "alpha": true
+    },
+    {
+      "filename": "level02-e1e7bc8936ef34.webp",
+      "source_bytes": 2447030,
+      "new_bytes": 210396,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level03-4b774c701e9ad5.webp",
+      "source_bytes": 2619101,
+      "new_bytes": 264550,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "element-6363669adeacb4.png",
+      "source_bytes": 7026,
+      "new_bytes": 7026,
+      "dimensions": [
+        56,
+        63
+      ],
+      "alpha": true
+    },
+    {
+      "filename": "element-09fd97ad727536.png",
+      "source_bytes": 6825,
+      "new_bytes": 6825,
+      "dimensions": [
+        56,
+        63
+      ],
+      "alpha": true
+    },
+    {
+      "filename": "element-2121c9ebac16a0.png",
+      "source_bytes": 7285,
+      "new_bytes": 7285,
+      "dimensions": [
+        56,
+        63
+      ],
+      "alpha": true
+    },
+    {
+      "filename": "level04-b8cfda21414191.webp",
+      "source_bytes": 2311177,
+      "new_bytes": 212396,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level05-fc71972c3ce78c.webp",
+      "source_bytes": 459473,
+      "new_bytes": 218518,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level06-b12d629a4d927f.webp",
+      "source_bytes": 392574,
+      "new_bytes": 193222,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "element-75f6ff2bbaa071.webp",
+      "source_bytes": 59481,
+      "new_bytes": 42676,
+      "dimensions": [
+        275,
+        546
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level07-633afb37b84cd7.webp",
+      "source_bytes": 706326,
+      "new_bytes": 370912,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "element-4398a78cc324fa.webp",
+      "source_bytes": 19481,
+      "new_bytes": 11644,
+      "dimensions": [
+        245,
+        125
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level08-f27b52f72d81af.webp",
+      "source_bytes": 462933,
+      "new_bytes": 210604,
+      "dimensions": [
+        1792,
+        1000
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level09-1920a41272a565.webp",
+      "source_bytes": 382506,
+      "new_bytes": 149584,
+      "dimensions": [
+        1680,
+        945
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level10-5d9beb26c346bc.webp",
+      "source_bytes": 259379,
+      "new_bytes": 113100,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level11-534a65defaf33d.webp",
+      "source_bytes": 341837,
+      "new_bytes": 226640,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "level12-5bce35c6c5335c.webp",
+      "source_bytes": 363463,
+      "new_bytes": 206036,
+      "dimensions": [
+        1680,
+        945
+      ],
+      "alpha": false
+    },
+    {
+      "filename": "report-a3d9e99f958969.webp",
+      "source_bytes": 334787,
+      "new_bytes": 211056,
+      "dimensions": [
+        1599,
+        900
+      ],
+      "alpha": false
+    }
+  ],
+  "html": {
+    "index.html": {
+      "before_bytes": 26828,
+      "after_bytes": 3544
+    },
+    "levels/01.html": {
+      "before_bytes": 3366611,
+      "after_bytes": 5818
+    },
+    "levels/02.html": {
+      "before_bytes": 3398872,
+      "after_bytes": 7512
+    },
+    "levels/03.html": {
+      "before_bytes": 3613891,
+      "after_bytes": 3726
+    },
+    "levels/04.html": {
+      "before_bytes": 3238876,
+      "after_bytes": 5149
+    },
+    "levels/05.html": {
+      "before_bytes": 793804,
+      "after_bytes": 6768
+    },
+    "levels/06.html": {
+      "before_bytes": 712020,
+      "after_bytes": 4671
+    },
+    "levels/07.html": {
+      "before_bytes": 1184202,
+      "after_bytes": 6020
+    },
+    "levels/08.html": {
+      "before_bytes": 755315,
+      "after_bytes": 5022
+    },
+    "levels/09.html": {
+      "before_bytes": 647830,
+      "after_bytes": 5288
+    },
+    "levels/10.html": {
+      "before_bytes": 470162,
+      "after_bytes": 6666
+    },
+    "levels/11.html": {
+      "before_bytes": 581969,
+      "after_bytes": 3281
+    },
+    "levels/12.html": {
+      "before_bytes": 621209,
+      "after_bytes": 3582
+    },
+    "results.html": {
+      "before_bytes": 567911,
+      "after_bytes": 6875
+    }
+  }
+}

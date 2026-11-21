@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#071222">
+<title>Авария в химической лаборатории — Отсек 1: Галогены</title>
+<link rel="stylesheet" href="../assets/css/level01-1.css">
+<link rel="stylesheet" href="../assets/css/embedded-mobile-v3.css?v=3"><link rel="stylesheet" href="../assets/css/embedded-mobile-level01-v3.css?v=3"></head>
+<body>
+<main class="game-stage" id="stage" aria-label="Игра Авария в химической лаборатории, первый отсек">
+  <div class="scene" id="scene" aria-label="Сосуды с галогенами — нажми на нужный сосуд">
+  <img class="paint" src="../assets/media/level01-15aca5048ffe9c.webp" alt="Аварийная химическая лаборатория: учёный, четыре герметичные установки с галогенами, красные предупреждающие лампы">
+  <div class="flicker-layer" aria-hidden="true"></div>
+  <div class="gas g1" aria-hidden="true"></div><div class="gas g2" aria-hidden="true"></div><div class="gas g3" aria-hidden="true"></div><div class="gas g4" aria-hidden="true"></div>
+  <div class="glass-pulse" id="tankF" aria-hidden="true"></div><div class="glass-pulse" id="tankCl" aria-hidden="true"></div><div class="glass-pulse" id="tankBr" aria-hidden="true"></div><div class="glass-pulse" id="tankI" aria-hidden="true"></div>
+  <div class="answer-mask" aria-hidden="true"><div class="conveyor-reflection"></div></div>
+  <button type="button" class="tank-choice" id="pickF" data-key="F2" aria-label="Выбрать ёмкость с фтором F₂"></button>
+  <button type="button" class="tank-choice" id="pickCl" data-key="Cl2" aria-label="Выбрать ёмкость с хлором Cl₂"></button>
+  <button type="button" class="tank-choice" id="pickBr" data-key="Br2" aria-label="Выбрать ёмкость с бромом Br₂"></button>
+  <button type="button" class="tank-choice" id="pickI" data-key="I2" aria-label="Выбрать ёмкость с иодом I₂"></button>
+  </div>
+  <div class="mobile-instruction">Нажми прямо на один из четырёх сосудов на картинке</div>
+  <div class="mobile-caption">Операция «Галогены»<small>ОТСЕК 1 / 12 · АВАРИЙНЫЙ РЕЖИМ</small></div>
+  <section class="status danger" aria-label="Уровень опасности">
+    <span class="status-icon" aria-hidden="true">⚠</span><span class="status-label">УРОВЕНЬ<br>ОПАСНОСТИ</span><strong id="dangerText" class="meter-value" aria-live="off">96%</strong><div class="meter-track"><div class="meter-fill" id="dangerFill"></div></div>
+  </section>
+  <section class="status restore" aria-label="Восстановление лаборатории">
+    <span class="status-icon" aria-hidden="true">⚗</span><span class="status-label">ВОССТАНОВЛЕНИЕ<br>ЛАБОРАТОРИИ</span><strong id="restoreText" class="meter-value" aria-live="off">4%</strong><div class="meter-track"><div class="meter-fill" id="restoreFill"></div></div>
+  </section>
+  <button type="button" class="hotspot" id="helpBtn" aria-label="Справка по игре" title="Справка">?</button>
+  <button type="button" class="hotspot" id="soundBtn" aria-label="Включить звук" title="Звук">♫</button>
+  <button type="button" class="hotspot" id="fullBtn" aria-label="Полноэкранный режим" title="На весь экран">⛶</button>
+  <aside class="scientist" id="scientistText" aria-live="polite">Срочно! В хранилище галогенов произошла утечка! Нажимай прямо на сосуды с веществами и локализуй аварию.</aside>
+  <section class="question-panel" aria-labelledby="questionText">
+    <span class="task-count" id="questionIndex">Задание 1 из 5</span>
+    <div class="question-copy" id="questionText">На полу замечены тёмные кристаллы. Определи, какой сосуд связан с этой утечкой.</div>
+  </section>
+  <div class="answers" id="answerArea" aria-hidden="true"></div>
+  <nav class="navigation" aria-label="Отсеки лаборатории">
+    <span class="sector-stamp" id="roomCount">Отсек 1 из 12</span>
+    <span class="sector-title">Аварийное хранилище галогенов</span>
+    <div class="sectors" id="sectors" aria-label="Карта отсеков"></div>
+  </nav>
+  <button class="next" type="button" id="nextBtn" disabled>ДАЛЕЕ ➜</button>
+  <div class="flash" id="flash" aria-hidden="true"></div>
+  <div class="intro" id="intro">
+    <div class="intro-card">
+      <div class="intro-head">⚠ СИГНАЛ АВАРИИ!</div>
+      <p>Повреждено хранилище галогенов. Локализуй утечки, нажимая прямо на защитные сосуды.</p>
+      <p><strong>5 заданий · без таймера · нажимай прямо на сосуды мышкой или касанием</strong></p>
+      <button class="intro-button" type="button" id="startBtn">НАЧАТЬ ДИАГНОСТИКУ</button>
+    </div>
+  </div>
+  <div class="overlay" id="modal" hidden>
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+      <button type="button" id="modalClose">ПОНЯТНО</button>
+    </div>
+  </div>
+</main>
+<script src="../assets/js/level01-1.js"></script>
+<script src="../assets/js/level01-2.js"></script>
+<script src="../assets/js/level01-3.js"></script>
+<script src="../assets/js/level01-4.js"></script>
+</body>
+</html>

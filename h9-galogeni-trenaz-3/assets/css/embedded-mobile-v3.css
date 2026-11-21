@@ -1,0 +1,9 @@
+/* MOBILE V3 — only inside the integrated game. The original approved desktop layout is unchanged. */
+@media (max-width:700px) and (orientation:portrait) {
+ html.mir-embedded-mobile, html.mir-embedded-mobile body {max-width:100%!important;overflow-x:hidden!important;}
+ html.mir-embedded-mobile .mir-brand {display:none!important;}
+ html.mir-embedded-mobile #fullBtn, html.mir-embedded-mobile #fullscreen,
+ html.mir-embedded-mobile #helpBtn, html.mir-embedded-mobile #hintBtn,
+ html.mir-embedded-mobile #soundBtn, html.mir-embedded-mobile #sound,
+ html.mir-embedded-mobile #help {display:none!important;}
+}

@@ -1,0 +1,79 @@
+
+/* COMPACT MOBILE SHELL V3. All original desktop styles remain unchanged. */
+#phoneHud{display:none}
+#fullNotice{display:none}
+@media(max-width:700px) and (orientation:portrait){
+ html,body{width:100%;min-width:0;overflow-x:hidden!important;margin:0}
+ #viewer.active{display:flex!important;flex-direction:column!important;min-height:100dvh!important;height:auto!important;overflow-x:hidden!important;align-items:stretch!important}
+ #bar{position:relative!important;top:auto!important;padding:5px 6px!important;min-height:0!important;
+  display:flex!important;flex-direction:column!important;gap:4px!important;align-items:stretch!important;flex:0 0 auto!important}
+ #bar .label{font-size:clamp(12px,3.4vw,15px)!important;line-height:1.2!important;padding:0!important;
+  text-align:center!important;width:100%!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ #bar .tools{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:3px!important;
+  flex-wrap:nowrap!important;width:100%!important;justify-content:stretch!important;min-width:0!important}
+ #bar button{margin:0!important;padding:2px 1px!important;height:31px!important;min-height:31px!important;
+  font-size:0!important;border-radius:5px!important;line-height:1!important;max-width:none!important;min-width:0!important;overflow:hidden!important}
+ #bar button::before{font-size:16px!important;line-height:1!important;display:block!important}
+ #back::before{content:'☰'}#prev::before{content:'‹'}#next::before{content:'›'}#showReport::before{content:'▤'}
+ #fullGame::before{content:'⛶'}#openTab::before{content:'↗'}
+ #phoneHud{display:flex!important;flex:0 0 auto!important;gap:5px!important;padding:4px 7px 6px!important;align-items:stretch!important;
+  width:100%!important;background:#071925;border-bottom:1px solid #396779!important}
+ #phoneHud .phoneStat{min-width:0;flex:1;background:#0d2634;border:1px solid #547483;border-radius:6px;padding:5px 6px;
+  display:flex;align-items:center;justify-content:space-between;gap:4px}
+ #phoneHud .phoneStat.warn{border-color:#a9555a}#phoneHud .phoneStat.recover{border-color:#5fa899}
+ #phoneHud .phoneStat span{font-size:clamp(8px,2.6vw,11px);line-height:1.12;font-weight:800;max-width:100px}
+ #phoneHud .phoneStat strong{font-size:clamp(15px,4.2vw,19px);white-space:nowrap;line-height:1.05}
+ #phoneHud .warn strong{color:#ff9d91}#phoneHud .recover strong{color:#a1ffcc}
+ #phoneHud .phoneActions{display:flex;gap:4px;align-items:stretch}
+ #phoneHud .phoneActions button{display:grid;place-items:center;min-width:30px;min-height:35px;padding:0;background:#153f4c;
+  border:1px solid #6faec1;color:#f0ffff;border-radius:6px;font-size:18px;font-weight:900}
+ .playarea{display:block!important;width:100%!important;max-width:100%!important;padding:0!important;margin:0!important;
+  min-height:0!important;flex:0 0 auto!important;overflow:hidden!important}
+ #frame{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;
+  aspect-ratio:16/9;min-height:0!important;max-height:none!important;border:0!important;margin:0!important}
+ #viewer[data-level="1"] #frame,#viewer[data-level="11"] #frame,#viewer[data-level="12"] #frame{aspect-ratio:auto!important}
+ #mobileAssist{padding:9px 10px 12px!important}
+ #mobileAssist .mobileTitle{font-size:clamp(14px,3.8vw,18px)!important;margin:0 0 5px!important;line-height:1.15!important}
+ #mobileAssist .mobileTask{font-size:clamp(15px,4.1vw,19px)!important;line-height:1.28!important;
+  padding:9px!important;margin:4px 0 8px!important;border-radius:8px!important}
+ #mobileAssist .mobileChoiceGrid{gap:6px!important}
+ #mobileAssist .mobileChoiceGrid button{font-size:clamp(14px,4vw,18px)!important;min-height:44px!important;
+  padding:7px 5px!important;border-radius:7px!important}
+ #mobileAssist #mobileHint{margin-top:7px!important;min-height:40px!important;font-size:15px!important;padding:8px 10px!important}
+ #mobileAssist .mobileStatus{font-size:13px!important;line-height:1.3!important;margin:5px 0!important}
+ #mobileAssist .mobileNote{display:none!important}
+ .disclaimer{padding:5px 9px!important;font-size:10px!important;line-height:1.2!important}
+ #viewer.report #phoneHud{display:none!important}
+ #viewer.report #reportFrame{height:calc(100dvh - 72px)!important;min-height:600px!important;max-height:none!important}
+ #fullNotice:not([hidden]){display:flex!important;align-items:center;gap:8px;justify-content:space-between;
+  padding:8px 10px;font-size:12px;line-height:1.2;background:#3c2621;color:#fff4e8;border-bottom:1px solid #d69c79}
+ #fullNotice button{background:#783c32;border:1px solid #c38279;color:white;border-radius:5px;padding:4px 7px}
+}
+@media(max-width:700px) and (orientation:landscape){
+ #bar{padding:3px 6px!important;min-height:35px!important}
+ #bar .label{font-size:12px!important}
+ #bar button{min-height:27px!important;padding:3px 6px!important;font-size:11px!important}
+ #viewer.active{height:100dvh!important;min-height:0!important}
+ #frame{max-height:100%!important}
+}
+
+/* A narrow landscape screen uses a virtual 1280px scene scaled as one unit.
+   This prevents narrow iframe CSS from switching its original level to portrait layout. */
+@media (max-width:1024px) and (orientation:landscape) and (max-height:650px){
+ #viewer.active{height:100dvh!important;min-height:0!important;max-height:100dvh!important;overflow:hidden!important}
+ .playarea{position:relative!important;display:block!important;flex:1 1 0!important;min-height:0!important;max-height:none!important;overflow:hidden!important;padding:0!important}
+ #frame{position:absolute!important;inset:auto!important;top:0!important;left:0!important;max-width:none!important;min-width:1280px!important;width:1280px!important;max-height:none!important;min-height:0!important;aspect-ratio:auto!important;height:720px!important;
+ transform:scale(var(--mir-landscape-scale, .5))!important;transform-origin:top left!important;object-fit:initial!important}
+ #mobileAssist{display:none!important}
+ #bar{position:relative!important;flex:0 0 auto!important;min-height:0!important;padding:3px 7px!important}
+ #bar .label{font-size:11px!important}
+ #bar button{font-size:11px!important;padding:3px 6px!important;min-height:28px!important}
+ .disclaimer{font-size:10px!important;padding:2px!important}
+}
+
+#mobileBrand{display:none}
+@media(max-width:700px) and (orientation:portrait){
+ #viewer.active #mobileBrand{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;padding:3px 4px 0;min-height:23px}
+ #mobileBrand img{max-width:42px;max-height:22px;width:auto;height:auto;object-fit:contain}
+ #mobileBrand a{font:800 11px/1.1 Arial,sans-serif;color:#b9edff;text-decoration:underline;text-underline-offset:2px;touch-action:manipulation}
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Отсек 12 — Центральный реактор · Финал игры</title><link rel="stylesheet" href="../assets/css/level12-1.css"><link rel="stylesheet" href="../assets/css/embedded-mobile-v3.css?v=3"><link rel="stylesheet" href="../assets/css/embedded-mobile-finals-v3.css?v=3"></head><body>
+<main class="stage" id="stage">
+<div class="scene"></div><div class="tint"></div><div class="redGlow"></div>
+<div class="reactorAura" aria-hidden="true"></div><div class="reactorValve" aria-hidden="true"></div><div class="reactorSteam" aria-hidden="true"></div><div class="sixLocks" aria-hidden="true"><span class="reactorLock" id="reactorLock1">✓</span><span class="reactorLock" id="reactorLock2">✓</span><span class="reactorLock" id="reactorLock3">✓</span><span class="reactorLock" id="reactorLock4">✓</span><span class="reactorLock" id="reactorLock5">✓</span><span class="reactorLock" id="reactorLock6">✓</span></div>
+<div class="door" aria-hidden="true"><div class="doorPanel left"></div><div class="doorPanel right"></div></div>
+<div class="meter danger"><span class="sym">⚠</span><div style="flex:1"><small>ОПАСНОСТЬ</small><strong id="danger">4%</strong><div class="bar"><i id="dangerBar" style="width:4%"></i></div></div></div>
+<div class="topTitle"><strong>ОТСЕК 12 · ЦЕНТРАЛЬНЫЙ РЕАКТОР</strong><span>ФИНАЛЬНАЯ АВАРИЯ</span></div>
+<div class="meter restore"><span class="sym">⚙</span><div style="flex:1"><small>ВОССТАНОВЛЕНО</small><strong id="restore">96%</strong><div class="bar"><i id="restoreBar" style="width:96%"></i></div></div></div>
+<button id="hintBtn" class="iconBtn" title="Подсказка" aria-label="Подсказка">?</button><button id="soundBtn" class="iconBtn" title="Звук" aria-label="Звук">♫</button><button id="fullBtn" class="iconBtn" title="Полный экран" aria-label="Полный экран">⛶</button>
+<section class="mission" aria-live="polite"><div class="kicker"><span id="counter">ЗАДАНИЕ 1 ИЗ 6</span><span id="signal">● БЛОКИРОВКА</span></div>
+<div class="title" id="taskTitle"></div><div class="question" id="taskText"></div><div class="equation" id="equation"></div><div class="choices" id="choices"></div><div class="dials" id="dials" hidden></div>
+<div class="feedback" id="feedback">Выбери ответ, затем нажми «Проверить».</div>
+<div class="controls"><button class="btn" id="reset">↻ Заново</button><button class="btn primary" id="check">Проверить</button><button class="btn" id="next" disabled>Далее ›</button></div>
+</section>
+<div class="hardwareTag">ЦЕНТРАЛЬНЫЙ РЕАКТОР<b id="statusTag">РЕЖИМ ОЖИДАНИЯ</b></div>
+<div class="energy"><div class="energyText">ВОССТАНОВЛЕНО БЛОКИРОВОК <strong id="energyValue">0%</strong></div><div class="energyBar"><i id="energyFill"></i></div></div>
+<div class="steps" id="steps"></div><div class="nextSector" id="footer">ФИНАЛЬНЫЙ ЭТАП · ПОСЛЕДНИЙ ОТСЕК</div>
+<div class="modal" id="modal"><div class="modalBox"><h3 id="modalHeading"></h3><p id="modalMessage"></p><button id="modalClose">Понятно</button></div></div>
+</main>
+<script src="../assets/js/level12-1.js"></script><script src="../assets/js/level12-2.js"></script>
+<script src="../assets/js/level12-3.js"></script>
+<script src="../assets/js/level12-4.js"></script>
+<script src="../assets/js/level12-5.js"></script>
+<script src="../assets/js/level12-6.js"></script></body></html>

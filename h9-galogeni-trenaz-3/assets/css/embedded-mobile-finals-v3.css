@@ -1,0 +1,33 @@
+
+@media(max-width:700px) and (orientation:portrait) {
+ html.mir-embedded-mobile body{margin:0!important;min-height:0!important;height:auto!important;display:block!important;overflow-x:hidden!important;overflow-y:auto!important}
+ html.mir-embedded-mobile .stage{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:start!important;gap:8px!important;
+    width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;
+    padding:8px!important;overflow:visible!important;container-type:normal!important;box-shadow:none!important}
+ html.mir-embedded-mobile .meter,html.mir-embedded-mobile .topTitle,html.mir-embedded-mobile .iconBtn{display:none!important}
+ html.mir-embedded-mobile .mission{position:relative!important;inset:auto!important;left:auto!important;top:auto!important;right:auto!important;
+     width:100%!important;max-height:none!important;height:auto!important;flex:0 0 auto!important;order:1!important;
+     overflow:visible!important;border-radius:10px!important;border-width:1px!important;padding:12px 11px!important;gap:8px!important;margin:0!important}
+ html.mir-embedded-mobile .mission .title{font-size:clamp(20px,5.4vw,25px)!important;line-height:1.15!important}
+ html.mir-embedded-mobile .mission .question,html.mir-embedded-mobile .mission .question *{font-size:clamp(16px,4.3vw,19px)!important;line-height:1.34!important}
+ html.mir-embedded-mobile .mission .equation{font-size:clamp(18px,5.1vw,24px)!important;min-height:38px!important}
+ html.mir-embedded-mobile .mission .choice{font-size:clamp(16px,4.1vw,19px)!important;min-height:45px!important;padding:7px 4px!important}
+ html.mir-embedded-mobile .mission .feedback{font-size:clamp(14px,3.8vw,17px)!important;min-height:0!important;padding:7px!important}
+ html.mir-embedded-mobile .mission .btn{font-size:clamp(14px,3.7vw,17px)!important;padding:9px 7px!important;min-height:40px!important}
+ html.mir-embedded-mobile .mission .controls{gap:5px!important}
+ html.mir-embedded-mobile .mission .dials{gap:5px!important}
+ html.mir-embedded-mobile .mission .dial{min-width:0!important;padding:5px 2px!important}
+ html.mir-embedded-mobile .mission .dial span{font-size:11px!important;line-height:1.1!important}
+ html.mir-embedded-mobile .mission .dial strong{font-size:24px!important}
+ html.mir-embedded-mobile .mission .dial small{font-size:10px!important}
+ html.mir-embedded-mobile .energy{position:relative!important;inset:auto!important;left:auto!important;right:auto!important;bottom:auto!important;
+    width:100%!important;height:auto!important;order:2!important;padding:7px!important;}
+ html.mir-embedded-mobile .steps{position:relative!important;inset:auto!important;left:auto!important;right:auto!important;bottom:auto!important;
+    width:100%!important;max-width:none!important;order:3!important;justify-content:center!important;gap:6px!important;}
+ html.mir-embedded-mobile .step{width:28px!important;height:28px!important;font-size:13px!important}
+ html.mir-embedded-mobile .hardwareTag,html.mir-embedded-mobile .nextSector,html.mir-embedded-mobile .door,html.mir-embedded-mobile .reactorLock{display:none!important}
+ html.mir-embedded-mobile .modal{position:fixed!important;inset:0!important;padding:10px!important}
+ html.mir-embedded-mobile .modalBox{max-width:360px!important;max-height:94svh!important;overflow:auto!important;padding:12px!important}
+ html.mir-embedded-mobile .modalBox h3{font-size:21px!important}
+ html.mir-embedded-mobile .modalBox p{font-size:16px!important}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Авария в химической лаборатории — Отсек 2: Токсичная зона</title>
+<link rel="stylesheet" href="../assets/css/level02-1.css">
+<link rel="stylesheet" href="../assets/css/level02-2.css"><link rel="stylesheet" href="../assets/css/embedded-mobile-v3.css?v=3"></head>
+<body>
+<main>
+ <section class="scene" id="scene" aria-label="Второй отсек. Токсичная зона лаборатории">
+   <img alt="Аварийная токсичная зона с гермодверью, вытяжным вентилятором, черепом на знаке, аварийным пультом и знаком эвакуационного выхода" src="../assets/media/level02-e1e7bc8936ef34.webp">
+   <div class="flashred" aria-hidden="true"></div><div class="mist" aria-hidden="true"></div><div class="mist" aria-hidden="true"></div>
+
+   <div class="effects" aria-hidden="true">
+     <div class="fx vapor a"></div><div class="fx vapor b"></div><div class="fx vapor c"></div>
+     <div class="fx air-cleanup tanks"></div><div class="fx air-cleanup reactor"></div>
+     <div class="fx toxic-outline"></div>
+     <div class="fx door-seal left"></div><div class="fx door-seal right"></div>
+     <div class="fx lock-ring"></div><div class="fx door-lock-light"></div>
+     <div class="fx fan-rotor"><svg viewBox="0 0 200 200" aria-hidden="true">
+       <defs><linearGradient id="blade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c7ebf1" stop-opacity=".72"/><stop offset=".65" stop-color="#4a7a92" stop-opacity=".22"/><stop offset="1" stop-color="#8bb0cb" stop-opacity=".02"/></linearGradient></defs>
+       <g fill="url(#blade)" stroke="#96cbd6" stroke-opacity=".25" stroke-width="1">
+         <path d="M98 97 C82 60 82 30 106 20 C141 13 143 51 116 91Z"/>
+         <path d="M98 97 C82 60 82 30 106 20 C141 13 143 51 116 91Z" transform="rotate(72 100 100)"/>
+         <path d="M98 97 C82 60 82 30 106 20 C141 13 143 51 116 91Z" transform="rotate(144 100 100)"/>
+         <path d="M98 97 C82 60 82 30 106 20 C141 13 143 51 116 91Z" transform="rotate(216 100 100)"/>
+         <path d="M98 97 C82 60 82 30 106 20 C141 13 143 51 116 91Z" transform="rotate(288 100 100)"/>
+       </g><circle cx="100" cy="100" r="13" fill="#325a6c" stroke="#b9d0da" stroke-width="4"/><circle cx="100" cy="100" r="4" fill="#d8efff"/>
+     </svg></div>
+     <div class="airflows"><svg viewBox="0 0 500 400" preserveAspectRatio="none"><path d="M410 330 Q320 250 250 155 Q220 100 225 24"/><path d="M325 380 Q220 240 210 170 Q230 110 232 30"/><path d="M460 290 Q380 190 295 145 Q260 70 244 10"/></svg></div>
+     <div class="fx alarm-button-glow"></div><div class="fx alarm-beacon"></div>
+     <div class="fx exit-glow"></div>
+     <div class="exit-route"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M56 86 Q70 76 87 74 Q94 70 95 52"/></svg></div>
+     <div class="signal-badge warning-label">☠ ТОКСИЧНОСТЬ ОПРЕДЕЛЕНА</div>
+     <div class="signal-badge door-label">✓ ШЛЮЗ ЗАБЛОКИРОВАН</div>
+     <div class="signal-badge fan-label">✓ ГАЗООЧИСТКА РАБОТАЕТ</div>
+     <div class="signal-badge alarm-label">✓ СИГНАЛ ПЕРЕДАН</div>
+     <div class="signal-badge exit-label">✓ МАРШРУТ НАЙДЕН</div>
+   </div>
+   <div class="hud">
+    <div class="counter danger"><span class="counter-label">⚠ ОПАСНОСТЬ</span><br><strong id="dangerValue" class="num shiver">86%</strong><div class="meter"><span id="dangerBar" style="width:86%"></span></div></div>
+    <div class="center-title"><strong>ОПЕРАЦИЯ «ГАЛОГЕНЫ»</strong><small>ОТСЕК 2 — ТОКСИЧНАЯ ЗОНА</small></div>
+    <div class="counter recovery"><span class="counter-label">ВОССТАНОВЛЕНИЕ</span><br><strong id="recoveryValue" class="num">14%</strong><div class="meter"><span id="recoveryBar" style="width:14%"></span></div></div>
+   </div>
+   <div class="tools"><button type="button" class="tool" id="help" aria-label="Справка" title="Справка">?</button><button type="button" class="tool" id="sound" aria-label="Включить звук" title="Звук">♫</button><button type="button" class="tool" id="fullscreen" aria-label="Полный экран" title="Полный экран">⛶</button></div>
+   <button class="target" type="button" id="door" data-answer="door" aria-label="Аварийная гермодверь" title="Гермодверь"></button>
+   <button class="target" type="button" id="fan" data-answer="fan" aria-label="Штатная аварийная вытяжная установка" title="Система газоочистки"></button>
+   <button class="target" type="button" id="skull" data-answer="skull" aria-label="Предупреждающий знак череп и кости" title="Знак токсичности"></button>
+   <button class="target" type="button" id="console" data-answer="console" aria-label="Аварийный пульт" title="Аварийный пульт"></button>
+   <button class="target" type="button" id="exit" data-answer="exit" aria-label="Эвакуационный выход" title="Выход"></button>
+ </section>
+ <section class="dialog-strip" aria-live="polite">
+  <div class="row"><div class="badge" id="count">Задание 1 из 5</div><div class="task"><h1>Токсичная зона: дистанционное управление</h1><p id="question">Найди предупреждающий знак, который указывает на токсичное вещество. Нажми на него прямо в лаборатории.</p><div class="guide" id="guide">Нажимай на оборудование в помещении. У тебя нет ограничения по времени.</div></div><button class="next" id="next" type="button" disabled>ДАЛЕЕ ➜</button></div>
+ </section>
+ <nav class="bottom-nav" aria-label="Карта отсеков"><div class="title">ОТСЕКИ ЛАБОРАТОРИИ · 2 / 12</div><div class="rooms" id="rooms"></div></nav>
+ <div class="modal" id="intro"><div class="modal-card"><h2>⚠ ТОКСИЧНАЯ ЗОНА</h2><p>В первом отсеке удалось стабилизировать хранилище. Но токсичные газы проникли в карантинный сектор: повреждён шлюз, остановлена газоочистка, требуется экстренная изоляция.</p><p><strong>Найди нужное оборудование и устрани пять неисправностей, не входя в опасную зону.</strong></p><p>Здесь ответы выбирают <strong>на самой картинке</strong>, а не отдельными кнопками.</p><button type="button" id="start">НАЧАТЬ ЛОКАЛИЗАЦИЮ</button></div></div>
+ <div class="modal" id="popup" hidden><div class="modal-card"><h2 id="popupTitle">Отсек восстановлен</h2><p id="popupBody"></p><button type="button" id="popupClose">ПОНЯТНО</button></div></div>
+</main>
+<script src="../assets/js/level02-1.js"></script>
+
+<script src="../assets/js/level02-2.js"></script>
+<script src="../assets/js/level02-3.js"></script>
+<script src="../assets/js/level02-4.js"></script>
+</body></html>

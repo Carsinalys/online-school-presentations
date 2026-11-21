@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+<title>Авария в химической лаборатории — Отсек 7: Заблокированный реакционный блок</title>
+<link rel="stylesheet" href="../assets/css/level07-1.css">
+<link rel="stylesheet" href="../assets/css/embedded-mobile-v3.css?v=3"></head>
+<body>
+<main id="stage" class="stage" aria-label="Отсек 7. Заблокированный реакционный блок">
+  <img class="scene" src="../assets/media/level07-633afb37b84cd7.webp" alt="Повреждённая химическая лаборатория: три треснувших реактора, робот, реагенты и запертый аварийный шлюз">
+  <div class="red-pulse" aria-hidden="true"></div><div class="smoke" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="topmeter danger"><span class="warning" aria-hidden="true">⚠</span><div class="topcopy"><span>УРОВЕНЬ ОПАСНОСТИ</span><strong id="dangerText">44%</strong><div class="tinybar"><i id="dangerFill"></i></div></div></div>
+  <div class="titleTop"><strong>ОТСЕК № 7</strong><span>ЗАБЛОКИРОВАННЫЙ РЕАКЦИОННЫЙ БЛОК</span></div>
+  <div class="topmeter repair"><div class="topcopy"><span>ВОССТАНОВЛЕНИЕ</span><strong id="repairText">56%</strong><div class="tinybar"><i id="repairFill"></i></div></div></div>
+  <button id="helpBtn" class="iconhot" type="button" aria-label="Помощь" title="Помощь">?</button>
+  <button id="soundBtn" class="iconhot" type="button" aria-label="Включить звук" title="Включить звук">♫</button>
+  <button id="fullBtn" class="iconhot" type="button" aria-label="Полный экран" title="Полный экран">⛶</button>
+  <section class="question" aria-live="polite"><div id="qCounter" class="counter">ЗАДАНИЕ 1 ИЗ 5</div><div id="prompt" class="prompt"></div><div id="feedback" class="feedback"></div></section>
+  <button type="button" id="reactorOxide" class="reactorHit" aria-label="Реактор CuO" title="Реактор CuO"></button>
+  <button type="button" id="reactorBase" class="reactorHit" aria-label="Реактор NaOH" title="Реактор NaOH"></button>
+  <button type="button" id="reactorCarbonate" class="reactorHit" aria-label="Реактор CaCO3" title="Реактор CaCO₃"></button>
+  <button type="button" id="saltNaCl" class="saltHit" aria-label="Раствор NaCl" title="NaCl"></button>
+  <button type="button" id="saltNa2SiO3" class="saltHit" aria-label="Раствор Na2SiO3" title="Na₂SiO₃"></button>
+  <button type="button" id="saltNaNO3" class="saltHit" aria-label="Раствор NaNO3" title="NaNO₃"></button>
+  <div class="robotMotion" id="robotMotion" aria-hidden="true"><span class="beam"></span><span class="grip"></span><span class="pellet"></span></div>
+  <div class="dissolve" id="dissolve" aria-hidden="true"></div><img class="neutralLayer" id="neutralLayer" src="../assets/media/element-4398a78cc324fa.webp" alt="" aria-hidden="true"><div class="valve" id="valve" aria-hidden="true"></div>
+  <div class="bubbles" id="bubbles" aria-hidden="true"></div><div class="gasTrail" id="gasTrail" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="gelJar" id="gelJar" aria-hidden="true"><div class="jarNeck"></div><div class="jarBody"><div class="gel"></div></div><div class="tag" id="gelTag">КАМЕРА 4</div></div>
+  <div class="oxideDeck" id="oxideDeck" aria-label="Контейнеры с оксидами"></div>
+  <div class="choiceDeck" id="choiceDeck" aria-label="Варианты решения" hidden></div>
+  <div class="matchGuide" id="matchGuide" hidden>Выбери процесс, затем нажми на соответствующий реактор или сосуд</div>
+  <div class="processDeck" id="processDeck" aria-label="Названия химических процессов" hidden></div>
+  <div class="equation" id="equation" hidden></div>
+  <div class="repairedConsole" id="repairedConsole" aria-hidden="true">✓ СИСТЕМА ВОССТАНОВЛЕНА</div>
+  <div class="airlock" id="airlock" aria-hidden="true"><div class="portal"></div><div class="doorLeaf"></div></div>
+  <div class="lockRail" id="lockRail" aria-hidden="true"><span class="lock" data-i="0">🔒 1</span><span class="lock" data-i="1">🔒 2</span><span class="lock" data-i="2">🔒 3</span><span class="lock" data-i="3">🔒 4</span></div>
+  <div class="doorLabel" id="doorLabel" hidden>ШЛЮЗ ЗАБЛОКИРОВАН</div>
+  <div class="bottomBack" aria-hidden="true"></div><nav class="sectors" id="sectors" aria-label="12 отсеков лаборатории"></nav><button id="nextBtn" class="nextbtn" type="button" disabled>ДАЛЕЕ ››</button>
+  <div class="intro" id="intro"><div class="dialog"><h2>⚠ ОТСЕК № 7 — РЕАКЦИОННЫЙ БЛОК</h2><p>Авария повредила трубопроводы и реакционные установки. Защитная дверь заперта четырьмя замками.</p><p>Управляй механикой лаборатории с помощью знаний о реакциях соляной кислоты. Нажимай на контейнеры, приборы и сосуды — никакого таймера нет.</p><button id="startBtn" type="button">ВОЙТИ В ОТСЕК 7</button></div></div>
+  <div class="modal" id="modal" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><h2 id="modalTitle"></h2><p id="modalBody"></p><button id="closeBtn" type="button">ПОНЯТНО</button></div></div>
+</main>
+<script src="../assets/js/level07-1.js"></script>
+<script src="../assets/js/level07-2.js"></script>
+<script src="../assets/js/level07-3.js"></script>
+<script src="../assets/js/level07-4.js"></script>
+</body></html>

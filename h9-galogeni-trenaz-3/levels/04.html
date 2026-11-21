@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Авария в химической лаборатории — Отсек 4: Авария молекулярного стенда</title>
+<link rel="stylesheet" href="../assets/css/level04-1.css"><link rel="stylesheet" href="../assets/css/embedded-mobile-v3.css?v=3"></head><body>
+<main class="stage" id="stage" aria-label="Четвёртый отсек: авария молекулярного стенда">
+<img class="scene" src="../assets/media/level04-b8cfda21414191.webp" alt="Повреждённая молекулярная лаборатория: модели Cl₂, HCl и NaCl в отдельных стеклянных цилиндрах, слева разбитое табло с видами химической связи">
+<div class="ambient" aria-hidden="true"></div><div class="sparks" aria-hidden="true"><i class="spark"></i><i class="spark"></i><i class="spark"></i></div>
+<div class="topmeter danger"><span class="warning" aria-hidden="true">⚠</span><div class="topcopy"><span>УРОВЕНЬ ОПАСНОСТИ</span><strong id="dangerText">68%</strong><div class="tinybar"><i id="dangerFill"></i></div></div></div>
+<div class="titleTop"><strong>ОТСЕК № 4</strong><span>АВАРИЯ МОЛЕКУЛЯРНОГО СТЕНДА</span></div>
+<div class="topmeter repair"><div class="topcopy"><span>ВОССТАНОВЛЕНИЕ</span><strong id="repairText">32%</strong><div class="tinybar"><i id="repairFill"></i></div></div></div>
+<button type="button" class="iconhot" id="soundBtn" title="Включить звук" aria-label="Включить звук">♫</button><button type="button" class="iconhot" id="helpBtn" title="Как играть" aria-label="Помощь">?</button><button type="button" class="iconhot" id="fullBtn" title="Полный экран" aria-label="Полноэкранный режим">⛶</button>
+<section class="question" aria-live="polite"><div class="counter" id="qCounter">ЗАДАНИЕ 1 ИЗ 5</div><div class="prompt" id="prompt">Аварийная система обнаружила повреждение модели молекулы, в которой общая электронная пара одинаково притягивается обоими атомами. Найди эту молекулу!</div><div class="feedback" id="feedback"></div></section>
+<div class="hfOverlay" id="hfOverlay" hidden aria-hidden="true"><div class="mols"><span class="atom">H</span><span class="bond"></span><span class="atom f">F</span></div><strong>HF</strong><span class="hint">МОДЕЛЬ МОЛЕКУЛЫ</span></div><div id="hfLabel" class="hfLabel" hidden>HF</div>
+<button type="button" class="module" id="mCl" data-value="Cl2" title="Модель молекулы Cl₂" aria-label="Выбрать модель Cl₂"></button>
+<button type="button" class="module" id="mHCl" data-value="HCl" title="Модель молекулы HCl" aria-label="Выбрать модель HCl"></button>
+<button type="button" class="module" id="mNaCl" data-value="NaCl" title="Модель NaCl" aria-label="Выбрать модель NaCl"></button>
+<button type="button" class="labelHit" id="labNonpolar" data-bond="nonpolar" title="Ковалентная неполярная" aria-label="Ковалентная неполярная"></button>
+<button type="button" class="labelHit" id="labPolar" data-bond="polar" title="Ковалентная полярная" aria-label="Ковалентная полярная"></button>
+<button type="button" class="labelHit" id="labIonic" data-bond="ionic" title="Ионная" aria-label="Ионная"></button>
+<div class="pairMove" id="pairMove" aria-hidden="true"></div><div class="eTransfer" id="eTransfer" aria-hidden="true"></div>
+<div class="bottomBack" aria-hidden="true"></div><nav class="sectors" id="sectors" aria-label="12 отсеков лаборатории"></nav><button type="button" class="nextbtn" id="nextBtn" disabled>ДАЛЕЕ ››</button>
+<div class="intro" id="intro"><div class="dialog"><h2>⚠ ОТСЕК № 4 — МОЛЕКУЛЯРНЫЙ СТЕНД</h2><p>Молекулярные модели работают нестабильно. Восстанови химические связи и повреждённую установку!</p><p>Нажимай на изображённые модели молекул. В финале сопоставь их с типами связи на панели слева. У тебя нет ограничения времени.</p><button type="button" id="startBtn">НАЧАТЬ ДИАГНОСТИКУ</button></div></div>
+<div class="modal" id="modal" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><h2 id="modalTitle"></h2><p id="modalBody"></p><button type="button" id="closeBtn">ПОНЯТНО</button></div></div>
+</main>
+<script src="../assets/js/level04-1.js"></script>
+<script src="../assets/js/level04-2.js"></script>
+<script src="../assets/js/level04-3.js"></script>
+<script src="../assets/js/level04-4.js"></script>
+</body></html>

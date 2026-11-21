@@ -1,0 +1,42 @@
+
+@media (max-width:700px) and (orientation:portrait) {
+ html.mir-embedded-mobile body {min-height:0!important;overflow:auto!important;display:block!important}
+ html.mir-embedded-mobile .game-stage {
+  width:100%!important;min-height:0!important;max-height:none!important;height:auto!important;
+  aspect-ratio:auto!important;box-shadow:none!important;overflow:visible!important;
+  padding:6px 9px 9px!important;gap:7px!important;
+  display:grid!important;grid-template-columns:minmax(0,1fr)!important;
+  grid-template-areas:'scene' 'inst' 'question' 'note' 'next' 'nav'!important;
+  align-content:start!important;container-type:normal!important;
+ }
+ html.mir-embedded-mobile .game-stage>.scene {grid-area:scene!important;position:relative!important;inset:auto!important;
+  order:initial!important;width:100%!important;aspect-ratio:1672/941!important;height:auto!important;
+  border-radius:7px!important;overflow:hidden!important;}
+ html.mir-embedded-mobile .mobile-caption{display:none!important}
+ html.mir-embedded-mobile .mobile-instruction{grid-area:inst!important;position:relative!important;
+  margin:0!important;order:initial!important;padding:0!important;line-height:1.2!important;font-size:12px!important;min-height:0!important}
+ html.mir-embedded-mobile .status{display:none!important}
+ html.mir-embedded-mobile .hotspot{display:none!important}
+ html.mir-embedded-mobile .question-panel{grid-area:question!important;position:relative!important;inset:auto!important;
+   width:100%!important;min-height:60px!important;order:initial!important;
+   margin:2px 0 0!important;padding:17px 11px 8px!important;border-radius:8px!important}
+ html.mir-embedded-mobile .task-count{font-size:11px!important;min-width:0!important;height:auto!important;top:-12px!important;padding:3px 11px!important}
+ html.mir-embedded-mobile .question-copy{font-size:clamp(15px,4.2vw,19px)!important;line-height:1.26!important}
+ html.mir-embedded-mobile .scientist{grid-area:note!important;position:relative!important;inset:auto!important;width:100%!important;min-height:0!important;
+  order:initial!important;font-size:12px!important;line-height:1.25!important;padding:8px 10px!important;margin:0!important;border-radius:8px!important}
+ html.mir-embedded-mobile .next{grid-area:next!important;position:relative!important;inset:auto!important;
+  width:100%!important;height:42px!important;min-height:42px!important;order:initial!important;
+  padding:5px 8px!important;margin:0!important;font-size:17px!important;border-radius:8px!important}
+ html.mir-embedded-mobile .navigation{grid-area:nav!important;position:relative!important;inset:auto!important;
+   width:100%!important;height:auto!important;min-height:0!important;display:flex!important;flex-wrap:wrap!important;gap:3px!important;
+   padding:5px!important;order:initial!important;margin:0!important}
+ html.mir-embedded-mobile .sector-stamp{font-size:10px!important;padding:2px 5px!important;min-height:0!important}
+ html.mir-embedded-mobile .sector-title{font-size:11px!important;display:block!important;line-height:1.15!important}
+ html.mir-embedded-mobile .sectors{display:flex!important;gap:2px!important;justify-content:space-between!important;flex:1 0 100%!important;min-width:0!important}
+ html.mir-embedded-mobile .sector-dot{width:clamp(17px,4.8vw,22px)!important;height:clamp(17px,4.8vw,22px)!important;flex:0 0 auto!important}
+ html.mir-embedded-mobile .intro{position:fixed!important;inset:0!important;padding:12px!important}
+ html.mir-embedded-mobile .intro-card{max-width:360px!important;max-height:96svh!important;overflow:auto!important;padding:12px!important}
+ html.mir-embedded-mobile .intro-head{font-size:19px!important}
+ html.mir-embedded-mobile .intro-card p{font-size:14px!important;margin:8px 0!important}
+ html.mir-embedded-mobile .intro-button{font-size:15px!important;min-height:42px!important;padding:9px 12px!important}
+}
