@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Авария в химической лаборатории — Отсек 3: Анализатор электроотрицательности</title>
+<link rel="stylesheet" href="../assets/css/level03-1.css"></head><body>
+<main class="stage" id="stage" aria-label="Третий отсек химической лаборатории">
+<img class="background" src="../assets/media/level03-4b774c701e9ad5.webp" alt="Повреждённый анализатор электроотрицательности с четырьмя стеклянными модулями для фтора, хлора, брома и иода">
+<div class="ambient" aria-hidden="true"></div><div class="sparks" aria-hidden="true"><i class="spark"></i><i class="spark"></i><i class="spark"></i></div><div class="scanline" aria-hidden="true"></div>
+<div class="topmeter danger"><span class="warning">⚠</span><div class="topcopy"><span>ОПАСНОСТЬ</span><strong id="dangerValue">76%</strong><div class="tinybar"><i id="dangerBar"></i></div></div></div>
+<div class="topmeter repair"><div class="topcopy"><span>ВОССТАНОВЛЕНО</span><strong id="repairValue">24%</strong><div class="tinybar"><i id="repairBar"></i></div></div></div>
+<button type="button" class="iconhot" id="soundBtn" aria-label="Включить звуки" title="Звук">♪</button><button type="button" class="iconhot" id="helpBtn" aria-label="Справка" title="Справка">?</button><button type="button" class="iconhot" id="fullBtn" aria-label="Полноэкранный режим" title="Полный экран">⛶</button>
+<button type="button" class="canister" id="F" data-key="F" aria-label="Выбрать модуль фтора"></button><button type="button" class="canister" id="Cl" data-key="Cl" aria-label="Выбрать модуль хлора"></button><button type="button" class="canister" id="Br" data-key="Br" aria-label="Выбрать модуль брома"></button><button type="button" class="canister" id="I" data-key="I" aria-label="Выбрать модуль иода"></button>
+<div class="scheme" id="scheme" aria-live="polite"></div>
+<div class="question"><div class="number" id="number">Задание 1 из 5</div><div class="prompt" id="prompt"></div><div class="feedback" id="feedback" aria-live="polite"></div></div>
+<div class="control-backdrop" aria-hidden="true"></div><nav class="sector-strip" id="sectors" aria-label="12 отсеков лаборатории"></nav><button type="button" class="nextbtn" id="next" disabled>ДАЛЕЕ ››</button>
+<div class="intro" id="intro"><div class="dialog"><h2>⚠ ТРЕТИЙ ОТСЕК: СБОЙ АНАЛИЗАТОРА!</h2><p>После изоляции токсичной зоны опасность снизилась до <b>76%</b>. Теперь повреждён прибор электроотрицательности. Восстанови пять блоков, нажимая на датчики прямо в лаборатории.</p><p>Без таймера. Работает мышью и касанием.</p><button id="start">НАЧАТЬ ДИАГНОСТИКУ</button></div></div>
+<div class="modal" id="modal" hidden><div class="dialog"><h2 id="modalTitle"></h2><p id="modalText"></p><button type="button" id="modalClose">ПОНЯТНО</button></div></div>
+</main>
+<script src="../assets/js/level03-1.js"></script>
+<script src="../assets/js/level03-2.js"></script>
+<script src="../assets/js/level03-3.js"></script>
+<script src="../assets/js/level03-4.js"></script>
+</body></html>

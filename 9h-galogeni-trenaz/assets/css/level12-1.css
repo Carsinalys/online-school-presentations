@@ -1,0 +1,133 @@
+
+:root{--cyan:#80dcea;--mint:#63efac;--amber:#ffd58a;--red:#ff8c83}*{box-sizing:border-box}html,body{height:100%;margin:0;background:#050b11;font-family:Arial,'Trebuchet MS',sans-serif;color:#f4fbfe}body{min-height:100svh;display:flex;align-items:center;justify-content:center}button{font:inherit;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}button:disabled{cursor:not-allowed}[hidden]{display:none!important}
+.stage{position:relative;isolation:isolate;overflow:hidden;width:min(100vw,calc(100svh * 16 / 9));aspect-ratio:16/9;container-type:inline-size;background:#0b151b;box-shadow:0 0 0 .18cqw #7893a0,0 .8cqw 6cqw #000}
+.scene{position:absolute;inset:0;width:100%;height:100%;background-image:url("../media/level12-5bce35c6c5335c.webp");background-size:100% 100%;background-position:center;filter:contrast(1.06);z-index:0;pointer-events:none}
+.tint{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 73% 47%,transparent 0 23%,#040d1638 55%),linear-gradient(90deg,#04111a65,transparent 74%);pointer-events:none}
+/* Transparent animated mechanical overlay; does not obscure real machinery. */
+.engine{position:absolute;z-index:3;left:58%;top:38%;width:33%;height:24%;pointer-events:none;border:.24cqw solid #9eb7c766;border-radius:2.8cqw;box-shadow:0 0 1.6cqw #27c7ed28,inset 0 0 1.4cqw #5dd9f33b;background:linear-gradient(180deg,#14405328,#19495309);overflow:hidden;transform:rotate(-2deg)}
+.engine:before,.engine:after{content:'';position:absolute;inset:13% 3%;border-radius:2.7cqw;border:.23cqw solid #96c2d976;box-shadow:inset 0 0 .7cqw #33b6fc38}
+.engine:after{inset:37% 8%;border:.5cqw solid #89c5d441}
+.particle{position:absolute;left:-7%;top:45%;width:1.4cqw;height:1.4cqw;border-radius:50%;background:#87f5ff;box-shadow:0 0 1.1cqw .4cqw #16d5ff,0 0 2.3cqw #16d5ff;animation:electron 4.3s linear infinite;animation-play-state:paused;opacity:0}
+.particle:nth-child(2){animation-delay:-1.1s;top:29%}.particle:nth-child(3){animation-delay:-2.2s;top:63%}.particle:nth-child(4){animation-delay:-3.3s;top:47%}
+.stage.running .particle{animation-play-state:running;opacity:.93}@keyframes electron{from{transform:translateX(0) scale(.6);opacity:0}12%{opacity:1}80%{opacity:1}to{transform:translateX(33cqw) scale(1);opacity:0}}
+.wheel{position:absolute;z-index:4;left:82%;top:60%;width:10%;aspect-ratio:1;border:.65cqw double #899ca2;border-radius:50%;box-shadow:inset 0 0 1cqw #223b4c,0 0 1.3cqw #000;animation:gearspin 12s linear infinite;animation-play-state:paused;pointer-events:none}
+.wheel:before,.wheel:after{content:'';position:absolute;left:49%;top:6%;height:88%;width:.65cqw;background:linear-gradient(90deg,#768d9d,#cbd6d3);border-radius:.4cqw}.wheel:after{transform:rotate(60deg)}
+.stage.running .wheel{animation-play-state:running}@keyframes gearspin{to{transform:rotate(360deg)}}
+.redGlow{position:absolute;z-index:1;right:1%;top:7%;width:20%;height:35%;border-radius:50%;background:radial-gradient(ellipse,#e9302a24,transparent 68%);animation:alert 2.5s infinite alternate;pointer-events:none}@keyframes alert{to{opacity:.25}}
+/* Emergency door at far right; opens only on final successful solution. */
+.door{position:absolute;right:1.6%;top:19%;height:58%;width:17.6%;z-index:3;pointer-events:none;border:.48cqw solid #63757d;border-radius:.8cqw;background:#0b141bc9;box-shadow:inset 0 0 2cqw #000,0 0 2cqw #000a;overflow:hidden}
+.doorPanel{position:absolute;top:0;height:100%;width:50%;background:repeating-linear-gradient(180deg,#53636d 0 12%,#1f2d36 13% 15%,#455760 16% 27%);border:.25cqw solid #647c89;transition:transform 1.7s ease}
+.doorPanel.left{left:0}.doorPanel.right{right:0}.doorPanel:after{content:'';position:absolute;top:30%;bottom:20%;left:44%;border-left:.7cqw ridge #afbec1}.doorPanel.right:after{left:27%}.stage.won .doorPanel.left{transform:translateX(-104%)}.stage.won .doorPanel.right{transform:translateX(104%)}
+/* Consistent top HUD and controls (large readable type). */
+.meter{position:absolute;z-index:14;top:.8%;height:8.5%;display:flex;align-items:center;gap:.55cqw;padding:.3cqw .72cqw;border:.14cqw solid #ef6c78;border-radius:.7cqw;background:#07151ee8;box-shadow:0 .1cqw 1cqw #0009}.meter.danger{left:1.2%;width:23%}.meter.restore{right:12.1%;width:18%;border-color:#6af9c2}.meter .sym{font-size:2.4cqw}.meter strong{font-size:2.1cqw;line-height:1;color:#ff988a}.meter.restore strong{color:#74ffb9}.meter small{display:block;font-size:1.14cqw;font-weight:900}.meter .bar{height:.45cqw;border-radius:.5cqw;margin-top:.2cqw;background:#1b2c33;overflow:hidden}.meter i{display:block;height:100%;background:#ff6d72;transition:width .7s}.meter.restore i{background:#4dea9f}
+.topTitle{position:absolute;left:25.1%;top:1.2%;width:43.7%;height:7.6%;z-index:14;display:flex;flex-direction:column;align-items:center;justify-content:center;border:.14cqw solid #79ccd9;border-radius:.8cqw;background:#071723eb;text-align:center}.topTitle strong{font-size:1.97cqw;line-height:1.07}.topTitle span{font-size:1.25cqw;color:#ffe2a1;font-weight:800}
+.iconBtn{position:absolute;top:1.65%;height:6.35%;width:3.2%;z-index:16;border:.13cqw solid #75c8e0;border-radius:.6cqw;background:#102b3ae8;color:white;font-size:2.06cqw;font-weight:900}.iconBtn:hover{background:#1c536b}#hintBtn{right:8.35%}#soundBtn{right:4.55%}#fullBtn{right:.75%}
+/* Question panel keeps mechanical scene visible to the right. */
+.mission{position:absolute;z-index:12;left:2.4%;top:12%;width:53.8%;max-height:76%;border:.17cqw solid #76b4c5;border-radius:1.12cqw;background:linear-gradient(140deg,#081923ed,#071925e9);box-shadow:0 .6cqw 2cqw #0008;display:flex;flex-direction:column;gap:.54cqw;padding:1.05cqw 1.25cqw;overflow:auto}
+.kicker{display:flex;justify-content:space-between;align-items:center;gap:.9cqw;color:#ffdd9e;font-weight:900;font-size:1.3cqw}
+.title{font-size:2.25cqw;line-height:1.12;font-weight:900;color:#f6fbff}
+.question{font-size:1.55cqw;line-height:1.29;font-weight:800;color:#dff3fa}
+.equation{display:flex;justify-content:center;align-items:center;min-height:4.25cqw;padding:.35cqw;border:.11cqw solid #b4a47778;border-radius:.63cqw;background:#29302688;color:#fff0cc;font-size:2.18cqw;font-weight:900;text-align:center;line-height:1.16}
+.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6cqw}
+.choice{min-height:4.2cqw;border:.16cqw solid #68a9bf;border-radius:.67cqw;padding:.6cqw .55cqw;background:linear-gradient(155deg,#173c4c,#112735);color:#f3feff;font-weight:900;font-size:1.85cqw;line-height:1.14;text-align:center}
+.choice:hover:not(:disabled){background:#195068;border-color:#c6f5ff}.choice.selected{border-color:#ffd887;background:#59421fe8}.choice.good{background:#0b6441;border-color:#83ffc0}.choice.bad{background:#67302d;border-color:#ff9b8f}
+.feedback{font-size:1.44cqw;line-height:1.25;min-height:2.2cqw;border-left:.32cqw solid #51d4f8;border-radius:.34cqw;background:#102f3e;padding:.46cqw .65cqw;color:#e7f9ff;font-weight:850}.feedback.good{background:#104837;border-color:#69ffb9;color:#c7ffe4}.feedback.bad{background:#522824;border-color:#ff8d79;color:#ffe0d1}
+.controls{display:flex;align-items:center;justify-content:space-between;gap:.7cqw}.btn{border:.12cqw solid #94c0cd;border-radius:.6cqw;background:#214a59;color:white;font-weight:900;font-size:1.43cqw;padding:.68cqw 1cqw}.btn.primary{border-color:#a5ffce;background:linear-gradient(#289e6b,#126f49)}.btn:disabled{opacity:.4}
+/* Number dials in the final puzzle. */
+.dials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65cqw}.dial{border:.18cqw solid #6db3bd;background:linear-gradient(#183948,#10242f);border-radius:.72cqw;padding:.48cqw;display:flex;flex-direction:column;align-items:center;gap:.25cqw;color:#fff}.dial span{font-size:1.3cqw;font-weight:850;color:#e6f8ff}.dial strong{font-size:2.55cqw;line-height:1.13;color:#ffdf9d}.dial small{font-size:1.06cqw;color:#9ed5e8}.dial:hover{border-color:#ffe1a1;background:#244956}
+/* Right side status and gate, without large dark rectangle. */
+.hardwareTag{position:absolute;z-index:10;right:4%;top:13%;width:31%;padding:.65cqw .8cqw;border:.12cqw solid #7b9eab;border-radius:.74cqw;background:#061723b8;color:#e8faff;text-align:center;font-weight:900;font-size:1.22cqw}.hardwareTag b{display:block;color:#ffe3a1;font-size:1.64cqw;margin-top:.16cqw}
+.energy{position:absolute;z-index:10;right:4.5%;bottom:15%;width:31%;padding:.7cqw .85cqw;background:#0b1f2ad9;border:.1cqw solid #78bdcd;border-radius:.73cqw;box-shadow:0 0 1cqw #0007}.energyText{display:flex;justify-content:space-between;align-items:center;font-size:1.2cqw;font-weight:900}.energyText strong{color:#6affbc;font-size:1.4cqw}.energyBar{width:100%;height:1cqw;margin-top:.35cqw;border:.1cqw solid #6c909c;border-radius:.55cqw;background:#071019;overflow:hidden}.energyBar i{display:block;width:0;height:100%;background:linear-gradient(90deg,#257ec6,#63fbd7);box-shadow:0 0 1cqw #1be8f5;transition:width 1s}
+.steps{position:absolute;z-index:13;bottom:2%;left:1.6%;display:flex;gap:.42cqw}.step{display:grid;place-items:center;width:2.7cqw;height:2.65cqw;border:.1cqw solid #617c89;border-radius:.52cqw;background:#102531ed;color:#d7ecf6;font-size:1.33cqw;font-weight:900}.step.done{background:#155a40;border-color:#50e8a5;color:#d3ffe8}.step.now{background:#8a6529;border-color:#ffdf87;color:#fff}.nextSector{position:absolute;right:1.5%;bottom:1.8%;z-index:13;padding:.6cqw .9cqw;background:#091b24e9;border:.11cqw solid #688b99;border-radius:.54cqw;font-weight:850;font-size:1.24cqw;color:#e5faff}
+.modal{position:absolute;inset:0;z-index:50;display:none;justify-content:center;align-items:center;background:#02090cbb;padding:2cqw}.modal.show{display:flex}.modalBox{max-width:52cqw;width:100%;padding:2.3cqw;border:.2cqw solid #91cee0;border-radius:1.15cqw;background:linear-gradient(#0d2a39,#061823);box-shadow:0 0 4cqw #0009;text-align:center}.modalBox h3{margin:0 0 1cqw;font-size:2.25cqw;color:#ffe2ab}.modalBox p{font-size:1.67cqw;line-height:1.4;font-weight:750;margin:0 0 1.25cqw}.modalBox button{background:#21758a;color:#f6ffff;border:.1cqw solid #92e1ff;border-radius:.6cqw;padding:.65cqw 2cqw;font-weight:900;font-size:1.5cqw}
+@media(max-width:760px){.mission{left:1.7%;width:58.7%;top:11%;max-height:78%;gap:.35cqw}.title{font-size:2.32cqw}.question{font-size:1.72cqw}.feedback{font-size:1.48cqw}.choice{font-size:1.95cqw;min-height:4.4cqw}.hardwareTag{width:30%;right:3%;top:12%}.energy{right:2%;width:32%}.meter.restore{right:12%;width:16.5%}.meter.danger{width:22.5%}}
+@media(max-aspect-ratio:7/9){body{display:block;overflow-y:auto}.stage{width:100%;height:100svh;min-height:760px;max-height:none;aspect-ratio:auto;container-type:normal}.mission{left:3%;top:15%;width:94%;max-height:62%;padding:14px;gap:9px}.kicker{font-size:15px}.title{font-size:26px}.question{font-size:19px}.equation{font-size:25px;min-height:50px}.choices{gap:8px}.choice{font-size:20px;min-height:58px;border-width:2px;padding:7px}.feedback{font-size:17px;min-height:45px;padding:8px}.btn{font-size:17px;padding:10px}.meter{height:6.2%;top:.8%;padding:4px 5px}.meter .sym{font-size:22px}.meter strong{font-size:18px}.meter small{font-size:11px}.meter.danger{left:2%;width:42%}.meter.restore{right:2%;width:42%}.topTitle{top:7.3%;height:6.1%;left:3%;width:64%}.topTitle strong{font-size:14px}.topTitle span{font-size:10px}.iconBtn{top:8.4%;width:9%;height:4%;font-size:20px}.iconBtn#hintBtn{right:28%}.iconBtn#soundBtn{right:18%}.iconBtn#fullBtn{right:8%}.engine{top:79%;left:20%;width:60%;height:9%}.particle{width:12px;height:12px}.hardwareTag{display:none}.energy{bottom:7%;width:58%;right:21%}.energyText{font-size:13px}.energyText strong{font-size:16px}.energyBar{height:10px}.steps{bottom:2%;left:2%;flex-wrap:wrap;max-width:78%}.step{width:21px;height:22px;font-size:12px}.nextSector{display:none}.door{display:none}.modalBox{max-width:100%;padding:20px}.modalBox h3{font-size:25px}.modalBox p{font-size:18px}.modalBox button{font-size:18px}.dial span{font-size:14px}.dial strong{font-size:30px}.dial small{font-size:11px}}
+
+/* 11. ИСПРАВЛЕНО: утверждённая разрушенная лаборатория, крупные контрастные надписи */
+.scene{filter:contrast(1.02) brightness(1.035)!important;background-size:100% 100%!important}
+.tint{background:linear-gradient(90deg,rgba(3,11,18,.25) 0%,transparent 55%),linear-gradient(0deg,rgba(0,0,0,.2),transparent 30%)!important}
+.mission{left:2.2%;width:51.5%;top:12%;max-height:75%;background:linear-gradient(145deg,rgba(5,20,32,.91),rgba(7,27,41,.86))!important;border:0.19cqw solid #82c5d7!important;box-shadow:0 .6cqw 2.4cqw #000b, inset 0 0 2cqw #3cbbef15!important;padding:1.05cqw 1.22cqw!important;gap:.56cqw!important}
+.mission .title{color:#fff!important;font-size:2.35cqw!important;text-shadow:0 .14cqw .38cqw #000!important}
+.mission .question,.mission .question *{color:#f5fbff!important;font-size:1.72cqw!important;line-height:1.34!important;text-shadow:0 .09cqw .25cqw #000!important;font-weight:750!important}
+.mission .equation{color:#fff2c6!important;font-size:2.25cqw!important;background:#111d24d9!important}
+.mission .choice{color:#f6fdff!important;font-size:1.96cqw!important;background:linear-gradient(150deg,#1a4156,#0b2739)!important}
+.mission .choice.selected{background:#544021!important}.mission .choice.good{background:#0b6441!important}
+.mission .feedback{color:#f0fbff!important;font-size:1.58cqw!important;line-height:1.31!important;background:#0b2a3be3!important;font-weight:850!important}
+.mission .feedback.good{color:#c9ffe6!important;background:#12432ff0!important}
+.mission .feedback.bad{color:#ffe4d8!important;background:#532a2af0!important}
+.mission .btn,.mission .dial{color:#f6fdff!important;font-size:1.55cqw!important}
+.mission .dial span{color:#effaff!important}.mission .dial strong{color:#ffe3a6!important}
+.engine{left:57%;top:58%;width:34%;height:12%;border-width:.12cqw;background:transparent!important;opacity:.6}
+.wheel{left:80%;top:72%;width:8%;opacity:.65}
+.door{right:0%;top:18%;height:55%;width:9%;opacity:.65}
+.hardwareTag{right:4%;top:13%;width:32%;background:#061723d1!important;color:#fff!important}
+.energy{right:3%;bottom:13%;width:35%;background:#0b1f2aee!important;color:#fff!important}
+.topTitle strong,.topTitle span,.meter small{color:#f5fcff!important}
+@media(max-aspect-ratio:7/9){.mission{left:3%;top:15%;width:94%;max-height:62%;padding:14px!important;gap:9px!important}.mission .title{font-size:26px!important}.mission .question,.mission .question *{font-size:19px!important}.mission .equation{font-size:25px!important}.mission .choice{font-size:20px!important}.mission .feedback{font-size:18px!important}.mission .btn{font-size:17px!important}}
+
+/* Twelfth level: last reactor in the same approved dark, high contrast HUD. */
+.scene{background-position:center;background-size:100% 100%}
+.tint{background:linear-gradient(90deg,#06131c40,transparent 62%),linear-gradient(0deg,#02090d36,transparent 35%)!important}
+.mission{width:54%!important;left:2.1%!important;top:12%!important;max-height:76%!important;background:linear-gradient(145deg,#04131ef3,#092433ec)!important}
+.mission .question{font-size:1.68cqw!important}
+.mission .title{font-size:2.24cqw!important}
+.mission .choice{font-size:1.89cqw!important}
+.mission .feedback{font-size:1.52cqw!important;min-height:3.25cqw}
+.kicker{font-size:1.25cqw}
+.dials{grid-template-columns:repeat(2,minmax(0,1fr));gap:.6cqw}
+.dials.four{grid-template-columns:repeat(4,minmax(0,1fr));gap:.42cqw}
+.dials.four .dial{min-width:0;padding:.32cqw .1cqw}
+.dials.four .dial span{font-size:1.18cqw}
+.dials.four .dial strong{font-size:2.13cqw}
+.dials.four .dial small{font-size:.93cqw}
+.dials.two .dial{min-width:0}
+.stage .door{display:none}
+.engine,.wheel{display:none}
+.hardwareTag{right:2.6%;top:12.4%;width:26.5%;font-size:1.3cqw;background:#051521c2!important}
+.hardwareTag b{font-size:1.58cqw}
+.energy{right:2.8%;bottom:14%;width:30.5%;background:#061923df!important}
+.reactorLock{position:absolute;z-index:8;width:4.6%;height:6.8%;display:grid;place-items:center;transform:translate(-50%,-50%) scale(.85);border-radius:.42cqw;background:#15523cf0;box-shadow:0 0 2.2cqw .4cqw #3ffca16b,inset 0 0 .7cqw #7fffd96a;border:.2cqw solid #78ffbb;color:#d5ffeb;font-size:2.35cqw;font-weight:900;opacity:0;transition:opacity .4s,transform .35s;pointer-events:none}
+.reactorLock.unlocked{opacity:.97;transform:translate(-50%,-50%) scale(1);animation:lockAppear .55s ease both}
+@keyframes lockAppear{0%{opacity:0;scale:.7}100%{opacity:1;scale:1}}
+#reactorLock1{left:45.3%;top:24.2%}#reactorLock2{left:71.9%;top:24.3%}
+#reactorLock3{left:45.3%;top:41.7%}#reactorLock4{left:72.4%;top:41.7%}
+#reactorLock5{left:45.3%;top:58.4%}#reactorLock6{left:73.4%;top:58.4%}
+/* The icons correspond to six physical illuminated emergency locks on the photo. */
+.reactorAura{position:absolute;z-index:2;left:53%;top:40%;width:21%;height:24%;border-radius:50%;background:radial-gradient(ellipse,#ff583a50,transparent 65%);filter:blur(.9cqw);animation:auraFlash 2.7s ease-in-out infinite alternate;pointer-events:none}
+@keyframes auraFlash{to{opacity:.43;transform:scale(.96)}}
+.stage.won .reactorAura{background:radial-gradient(ellipse,#46ffc658,transparent 70%);animation:none;opacity:1}
+.reactorValve{position:absolute;z-index:4;left:86.9%;top:49.1%;width:8%;aspect-ratio:1;border:.6cqw ridge #b6c6ce;border-radius:50%;pointer-events:none;opacity:.7;animation:valveTurn 9s linear infinite;animation-play-state:paused;box-shadow:0 0 1.2cqw #000}
+.reactorValve:before,.reactorValve:after{content:'';position:absolute;left:47%;top:7%;width:.63cqw;height:86%;background:#9cb8c8;border-radius:.2cqw}.reactorValve:after{transform:rotate(70deg)}
+.stage.running .reactorValve{animation-play-state:running}
+@keyframes valveTurn{to{transform:rotate(360deg)}}
+.reactorSteam{position:absolute;right:7%;top:18%;width:10%;height:18%;z-index:2;pointer-events:none;border-radius:50%;background:radial-gradient(ellipse,#e5f7fa25,transparent 70%);filter:blur(1.4cqw);animation:steamPuff 5s linear infinite}
+@keyframes steamPuff{0%{transform:translateY(0) scale(.8);opacity:.7}100%{transform:translateY(-5cqw) scale(1.3);opacity:0}}
+.stage.won .reactorSteam{display:none}
+.stage.won .redGlow{opacity:.04!important;animation:none}
+.stage.won .scene{filter:contrast(1.03) brightness(1.11) saturate(.83)!important}
+.topTitle strong{font-size:1.9cqw}
+.stage.won .hardwareTag{border-color:#6bffc6;background:#063e2acb!important}
+.stage.won .hardwareTag b{color:#8affca}
+.mission .miniLabel{color:#ffe1a8;font-size:1.25cqw;font-weight:900;margin-top:.15cqw}
+.choices.tiny{grid-template-columns:repeat(3,minmax(0,1fr))}.choices.tiny .choice{font-size:1.6cqw!important;min-height:3.55cqw}
+@media(max-aspect-ratio:7/9){.mission{width:94%!important;left:3%!important;top:15%!important;max-height:63%!important}.mission .question{font-size:19px!important}.mission .choice{font-size:20px!important}.mission .title{font-size:25px!important}.mission .feedback{font-size:17px!important}.mission .miniLabel{font-size:16px}.dials.four .dial span{font-size:13px}.dials.four .dial strong{font-size:26px}.dials.four .dial small{font-size:10px}.reactorValve,.reactorLock,.reactorSteam{display:none}.hardwareTag{display:none}.energy{width:62%;right:19%;bottom:7%}}
+
+/* Финальная доводка М.И.Р.: согласованные исправления. */
+
+.mir-brand{position:absolute;left:1.2%;top:70%;width:13%;height:14%;z-index:9;
+ display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:.22cqw;
+ pointer-events:none;filter:drop-shadow(0 0 .35cqw #000b)}
+.mir-brand img{display:block;max-width:100%;width:auto;height:auto;max-height:70%;object-fit:contain;
+ opacity:.82;pointer-events:none}
+.mir-brand a{max-width:100%;display:block;box-sizing:border-box;text-align:center;
+ border:1px solid rgba(125,206,242,.65);border-radius:.35cqw;
+ background:rgba(1,18,35,.82);color:#e9f6ff;text-decoration:none;
+ padding:.17cqw .38cqw;font:800 clamp(10px,1.13cqw,17px)/1.15 Arial,sans-serif;
+ white-space:nowrap;pointer-events:auto;cursor:pointer}
+.mir-brand a:hover,.mir-brand a:focus-visible{color:#fff;background:#126079;outline:2px solid #e8fafa}
+/* Do not block any underlying hotspot with the decorative watermark. */
+.mir-brand img,.mir-brand{user-select:none}
+
+
+/* Финальная доводка М.И.Р.: согласованные исправления. */
+.mir-brand{top:73%;width:11.5%;}

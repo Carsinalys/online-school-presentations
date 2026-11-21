@@ -1,0 +1,45 @@
+
+/* Site-friendly adaptive viewport, no double-scroll on desktop */
+@media(min-width:701px){
+ #menu{height:100dvh;min-height:0;padding:10px;overflow:hidden}
+ #menu .board{max-height:calc(100dvh - 20px);overflow-y:auto;padding:clamp(14px,2vw,25px)}
+ #menu h1{font-size:clamp(28px,3.2vw,44px);margin-bottom:5px}
+ #menu .lead{font-size:clamp(14px,1.2vw,17px);line-height:1.36;margin:8px 0 12px}
+ #menu .sectors{margin:12px 0;gap:6px}
+ #menu .sector{font-size:12px;padding:6px 3px}
+ #menu .sector b{font-size:18px}
+ #menu .note{font-size:12px;margin:8px 0 0}
+ #menu .start,#menu .other{padding:9px 11px;font-size:15px}
+ #menu .mir-header-brand{margin:0 0 8px}
+ #menu .mir-header-brand img{width:110px;max-height:52px;filter:brightness(1.55) drop-shadow(0 0 4px #63a7ff55)}
+ html,body{height:100%;overflow-x:hidden}
+ #viewer.active{height:100dvh;min-height:0;max-height:100dvh;overflow:hidden}
+ #bar{flex:0 0 auto;min-height:44px;padding:5px 14px}
+ #bar button{padding:6px 10px;font-size:13px;min-height:32px}
+ .playarea{flex:1 1 0;min-height:0;max-height:none;padding:4px;overflow:hidden}
+ #frame{width:min(100%,calc((100dvh - 104px)*16/9));height:auto;aspect-ratio:16/9;max-height:100%;object-fit:contain;min-height:0}
+ .disclaimer{flex:0 0 auto;padding:4px 8px;font-size:11px}
+ #viewer.report #reportFrame{height:calc(100dvh - 90px);min-height:0;overflow:auto}
+}
+@media(max-height:620px) and (min-width:701px){
+ #menu{padding:5px}
+ #menu .board{padding:10px 15px;max-height:calc(100dvh - 10px)}
+ #menu .mir-header-brand{margin-bottom:4px}
+ #menu .mir-header-brand img{width:80px;max-height:40px}
+ #menu .mir-header-brand a{font-size:13px;padding:4px 7px}
+ #menu h1{font-size:clamp(25px,3.1vw,34px)}
+ #menu .lead{font-size:13px;line-height:1.25;margin:4px 0 8px}
+ #menu .sectors{margin:8px 0;gap:4px}
+ #menu .sector{font-size:10px;padding:4px 2px;line-height:1.12}
+ #menu .sector b{font-size:15px}
+ #menu .start,#menu .other{font-size:12px;padding:7px 9px}
+ #menu .note{display:none}
+}
+@media(max-width:700px){
+ html,body{overflow-x:hidden}
+ #viewer.active{width:100%;height:auto;min-height:100dvh;max-height:none;overflow:visible}
+ #frame{display:block;width:100%;max-width:100%;border-left:0;border-right:0}
+ #mobileAssist .mobileChoiceGrid button{min-height:55px;touch-action:manipulation}
+ #mobileAssist .mobileTask{font-size:clamp(17px,4.4vw,21px)}
+ .disclaimer{font-size:11px}
+}

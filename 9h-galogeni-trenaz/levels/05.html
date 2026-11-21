@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Авария в химической лаборатории — Отсек 5: Кислотная утечка</title>
+<link rel="stylesheet" href="../assets/css/level05-1.css"></head><body>
+<main class="stage" id="stage" aria-label="Пятый отсек: кислотная утечка">
+  <img class="scene" src="../assets/media/level05-fc71972c3ce78c.webp" alt="">
+  <div class="ambient" aria-hidden="true"></div><div class="sparks" aria-hidden="true"><i class="spark"></i><i class="spark"></i><i class="spark"></i></div>
+  <div class="topmeter danger"><span class="warning" aria-hidden="true">⚠</span><div class="topcopy"><span>УРОВЕНЬ ОПАСНОСТИ</span><strong id="dangerText">60%</strong><div class="tinybar"><i id="dangerFill"></i></div></div></div>
+  <div class="titleTop"><strong>ОТСЕК № 5</strong><span>АВАРИЯ В ОТДЕЛЕНИИ ГАЛОГЕНОВОДОРОДНЫХ КИСЛОТ</span></div>
+  <div class="topmeter repair"><div class="topcopy"><span>ВОССТАНОВЛЕНИЕ</span><strong id="repairText">40%</strong><div class="tinybar"><i id="repairFill"></i></div></div></div>
+  <button type="button" class="iconhot" id="soundBtn" title="Включить звук" aria-label="Включить звук">♫</button><button type="button" class="iconhot" id="helpBtn" title="Как играть" aria-label="Помощь">?</button><button type="button" class="iconhot" id="fullBtn" title="Полный экран" aria-label="Полный экран">⛶</button>
+  <section class="question" aria-live="polite"><div class="counter" id="qCounter">ЗАДАНИЕ 1 ИЗ 5</div><div class="prompt" id="prompt"></div><div class="feedback" id="feedback"></div></section>
+
+  <button type="button" class="tank" id="tHF" data-value="HF" title="Резервуар HF" aria-label="Выбрать резервуар HF">
+    <span class="resGlow"></span><span class="cap"></span><span class="glass"></span><span class="liquid"></span><span class="bub"></span><span class="bub2"></span><span class="label">HF</span><span class="formulaName" id="nameHF">Фтороводородная кислота</span>
+  </button>
+  <button type="button" class="tank" id="tHCl" data-value="HCl" title="Резервуар HCl" aria-label="Выбрать резервуар HCl">
+    <span class="resGlow"></span><span class="cap"></span><span class="glass"></span><span class="liquid"></span><span class="bub"></span><span class="bub2"></span><span class="label">HCl</span><span class="formulaName" id="nameHCl">Соляная кислота</span>
+  </button>
+  <button type="button" class="tank" id="tHBr" data-value="HBr" title="Резервуар HBr" aria-label="Выбрать резервуар HBr">
+    <span class="resGlow"></span><span class="cap"></span><span class="glass"></span><span class="liquid"></span><span class="bub"></span><span class="bub2"></span><span class="label">HBr</span><span class="formulaName" id="nameHBr">Бромоводородная кислота</span>
+  </button>
+  <button type="button" class="tank" id="tHI" data-value="HI" title="Резервуар HI" aria-label="Выбрать резервуар HI">
+    <span class="resGlow"></span><span class="cap"></span><span class="glass"></span><span class="liquid"></span><span class="bub"></span><span class="bub2"></span><span class="label">HI</span><span class="formulaName" id="nameHI">Иодоводородная кислота</span>
+  </button>
+
+  <div class="analyzer" id="analyzer"><div class="anHead">АНАЛИЗАТОР</div><div class="screen"><div class="status" id="anStatus">Кислотный блок нестабилен.<br>Восстанови показания системы.</div><div class="indicator" id="indicator"></div><div class="ionsView"><span class="ionBubble" id="vHplus">H⁺</span><span class="ionBubble" id="vClminus">Cl⁻</span></div><div class="noteWeak" id="weakNote">HF — слабая кислота, но она не является безопасной.</div></div></div>
+
+  <div class="matchPrompt" id="matchPrompt" hidden>Перетащи название на резервуар или выбери название и нажми на сосуд</div>
+  <div class="optionPanel" id="mediumPanel" hidden>
+    <button type="button" class="chip" data-medium="acid">КИСЛАЯ СРЕДА</button>
+    <button type="button" class="chip" data-medium="neutral">НЕЙТРАЛЬНАЯ</button>
+    <button type="button" class="chip" data-medium="base">ЩЕЛОЧНАЯ</button>
+  </div>
+  <div class="optionPanel" id="ionsPanel" hidden>
+    <button type="button" class="chip" data-ion="H+">H⁺</button>
+    <button type="button" class="chip" data-ion="Cl-">Cl⁻</button>
+    <button type="button" class="chip" data-ion="Na+">Na⁺</button>
+    <button type="button" class="chip" data-ion="OH-">OH⁻</button>
+  </div>
+  <div class="optionPanel" id="namesPanel" hidden>
+    <button type="button" class="chip" data-name="HBr">Бромоводородная кислота</button>
+    <button type="button" class="chip" data-name="HF">Фтороводородная кислота</button>
+    <button type="button" class="chip" data-name="HI">Иодоводородная кислота</button>
+    <button type="button" class="chip" data-name="HCl">Соляная кислота</button>
+  </div>
+
+  <div class="bottomBack" aria-hidden="true"></div><nav class="sectors" id="sectors" aria-label="12 отсеков лаборатории"></nav><button type="button" class="nextbtn" id="nextBtn" disabled>ДАЛЕЕ ››</button>
+  <div class="intro" id="intro"><div class="dialog"><h2>⚠ ОТСЕК № 5 — КИСЛОТНАЯ УТЕЧКА</h2><p>В блоке галогеноводородных кислот произошёл сбой. Восстанови резервуары, показания анализатора и маркировку кислот.</p><p>Нажимай прямо на резервуары HF, HCl, HBr и HI, а также на элементы анализатора.</p><button type="button" id="startBtn">НАЧАТЬ ОТСЕК 5</button></div></div>
+  <div class="modal" id="modal" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><h2 id="modalTitle"></h2><p id="modalBody"></p><button type="button" id="closeBtn">ПОНЯТНО</button></div></div>
+</main>
+<script src="../assets/js/level05-1.js"></script>
+<script src="../assets/js/level05-2.js"></script>
+<script src="../assets/js/level05-3.js"></script>
+<script src="../assets/js/level05-4.js"></script>
+</body></html>

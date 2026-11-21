@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#07121a">
+<title>Авария в химической лаборатории — Отсек 11. Электронный баланс</title>
+<link rel="stylesheet" href="../assets/css/level11-1.css">
+</head><body>
+<main class="stage" id="stage">
+<div class="scene"></div><div class="tint"></div><div class="redGlow"></div>
+<div class="engine" aria-hidden="true"><i class="particle"></i><i class="particle"></i><i class="particle"></i><i class="particle"></i></div><div class="wheel" aria-hidden="true"></div>
+<div class="door" aria-hidden="true"><div class="doorPanel left"></div><div class="doorPanel right"></div></div>
+<div class="meter danger"><span class="sym">⚠</span><div style="flex:1"><small>ОПАСНОСТЬ</small><strong id="danger">12%</strong><div class="bar"><i id="dangerBar" style="width:12%"></i></div></div></div>
+<div class="topTitle"><strong>ОТСЕК 11 · ЭЛЕКТРОННЫЙ БАЛАНС</strong><span>АВАРИЯ В ЭНЕРГЕТИЧЕСКОМ БЛОКЕ</span></div>
+<div class="meter restore"><span class="sym">⚙</span><div style="flex:1"><small>ВОССТАНОВЛЕНО</small><strong id="restore">88%</strong><div class="bar"><i id="restoreBar" style="width:88%"></i></div></div></div>
+<button id="hintBtn" class="iconBtn" title="Подсказка" aria-label="Подсказка">?</button><button id="soundBtn" class="iconBtn" title="Звук" aria-label="Звук">♫</button><button id="fullBtn" class="iconBtn" title="Полный экран" aria-label="Полный экран">⛶</button>
+<section class="mission" aria-live="polite"><div class="kicker"><span id="counter">ЗАДАНИЕ 1 ИЗ 5</span><span id="signal">● БЛОКИРОВКА</span></div>
+<div class="title" id="taskTitle"></div><div class="question" id="taskText"></div><div class="equation" id="equation"></div><div class="choices" id="choices"></div><div class="dials" id="dials" hidden></div>
+<div class="feedback" id="feedback">Выбери ответ, затем нажми «Проверить».</div>
+<div class="controls"><button class="btn" id="reset">↻ Заново</button><button class="btn primary" id="check">Проверить</button><button class="btn" id="next" disabled>Далее ›</button></div>
+</section>
+<div class="hardwareTag">ЭЛЕКТРОННЫЙ СИНХРОНИЗАТОР<b id="statusTag">РЕЖИМ ОЖИДАНИЯ</b></div>
+<div class="energy"><div class="energyText">ЗАРЯД МЕХАНИЗМА <strong id="energyValue">0%</strong></div><div class="energyBar"><i id="energyFill"></i></div></div>
+<div class="steps" id="steps"></div><div class="nextSector" id="footer">Остался последний энергетический рубеж</div>
+<div class="modal" id="modal"><div class="modalBox"><h3 id="modalHeading"></h3><p id="modalMessage"></p><button id="modalClose">Понятно</button></div></div>
+</main>
+<script src="../assets/js/level11-1.js"></script>
+
+<script src="../assets/js/level11-2.js"></script>
+<script src="../assets/js/level11-3.js"></script>
+<script src="../assets/js/level11-4.js"></script>
+</body></html>

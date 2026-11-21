@@ -1,0 +1,1 @@
+document.addEventListener("click",function(ev){let a=ev.target.closest("a");if(a&&a.getAttribute("href")==="#results"){ev.preventDefault();window.parent.postMessage({source:"chem-tracker-ui",action:"results"},"*")}},true)

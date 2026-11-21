@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+<title>Авария в химической лаборатории — Отсек 8: Солевой шлюз</title>
+<link rel="stylesheet" href="../assets/css/level08-1.css">
+</head>
+<body>
+<main class="stage" id="stage" aria-label="Отсек 8. Солевой шлюз">
+<img class="scene" src="../assets/media/level08-f27b52f72d81af.webp" alt="Повреждённая промышленная лаборатория: металлические колонны, робот-сортировщик, конвейер с бутылочками и массивная аварийная дверь">
+<div class="alarm"></div>
+<div class="sparks" aria-hidden="true"><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i></div>
+<div class="topmeter danger"><span class="warning">⚠</span><div class="topcopy"><span>ОПАСНОСТЬ</span><strong id="dangerText">36%</strong><div class="tinybar"><i id="dangerFill"></i></div></div></div>
+<div class="titleTop"><strong>АВАРИЯ В ХИМИЧЕСКОЙ ЛАБОРАТОРИИ</strong><span>ОТСЕК 8 · СОЛЕВОЙ ШЛЮЗ</span></div>
+<div class="topmeter repair"><div class="topcopy"><span>ВОССТАНОВЛЕНО</span><strong id="repairText">64%</strong><div class="tinybar"><i id="repairFill"></i></div></div></div>
+<button type="button" class="iconhot" id="helpBtn" title="Помощь" aria-label="Помощь">?</button>
+<button type="button" class="iconhot" id="soundBtn" title="Включить звук" aria-label="Включить звук">♫</button>
+<button type="button" class="iconhot" id="fullBtn" title="Полный экран" aria-label="Полный экран">⛶</button>
+<div class="question" aria-live="polite"><span class="qCounter" id="qCounter">ЗАДАНИЕ 1 ИЗ 5</span><span class="prompt" id="prompt"></span><span class="feedback" id="feedback"></span></div>
+<div class="beltLive" id="beltLive" aria-hidden="true"></div>
+<div class="robotGlow" aria-hidden="true"></div><div class="gripperMotion" id="gripperMotion" aria-hidden="true"></div>
+<div class="columnEffect" id="colA"><div class="liquid"></div><div class="cloud"></div><div class="droplets"><span></span><span></span><span></span></div></div>
+<div class="columnEffect" id="colB"><div class="liquid"></div><div class="cloud"></div><div class="droplets"><span></span><span></span><span></span></div></div>
+<div class="columnEffect" id="colC"><div class="liquid"></div><div class="cloud"></div><div class="droplets"><span></span><span></span><span></span></div></div>
+<div class="bottleDeck" id="bottleDeck" hidden></div>
+<div class="answerDeck" id="answerDeck" hidden></div>
+<div class="counterHint" id="counterHint" hidden></div>
+<button class="actionBtn" id="actionBtn" hidden type="button">ПРОВЕРИТЬ ВЫБОР</button>
+<div class="equation" id="equation" hidden></div>
+<div class="matchBoard" id="matchBoard" hidden>
+<div class="matchTitle">РАСТВОРЫ</div><div class="matchTitle">РЕЗУЛЬТАТ С AgNO₃</div>
+<div class="matchColumn" id="matchSources"></div><div class="matchColumn" id="matchOutcomes"></div>
+</div>
+<div class="doorPlate" id="doorPlate"><div class="doorHalf left"></div><div class="doorHalf right"></div></div>
+<div class="lockRail" id="lockRail"><span class="lock">🔒 1</span><span class="lock">🔒 2</span><span class="lock">🔒 3</span><span class="lock">🔒 4</span></div>
+<div class="doorLabel" id="doorLabel" hidden>ШЛЮЗ ЗАБЛОКИРОВАН</div>
+<div class="bottom"><div class="sectorStrip" id="sectors" aria-label="Этапы игры: 12 отсеков"></div><button class="nextBtn" id="nextBtn" disabled>ДАЛЕЕ ››</button></div>
+<div class="introShade" id="intro">
+<div class="introPanel"><h1>⚠ ОТСЕК № 8 — СОЛЕВОЙ ШЛЮЗ</h1><p>После аварии в сортировочном блоке перепутаны образцы солей, а тяжёлая гермодверь заблокирована. <strong>Отбери хлориды, восстанови химические испытания и разблокируй четыре замка шлюза.</strong></p><p>Работай с конвейером, дозатором и реакционными колоннами. Времени на обдумывание достаточно — таймера нет.</p><button id="startBtn" type="button">ВОЙТИ В ОТСЕК 8</button></div>
+</div>
+<div class="modal" id="modal" hidden><div class="modalBox"><h2 id="modalTitle"></h2><p id="modalBody"></p><button type="button" id="closeBtn">ПОНЯТНО</button></div></div>
+</main>
+<script src="../assets/js/level08-1.js"></script>
+
+<script src="../assets/js/level08-2.js"></script>
+<script src="../assets/js/level08-3.js"></script>
+<script src="../assets/js/level08-4.js"></script>
+</body>
+</html>
