@@ -1,0 +1,56 @@
+
+:root{font-family:'Segoe UI',Arial,sans-serif;color:#29472e;background:#f3fbec}*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:4px solid #f2ad35;outline-offset:3px}button:disabled{opacity:.38;cursor:default}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#edf8e1,#fff7e5)}#stage{width:1600px;height:900px;flex:0 0 1600px;transform-origin:center;position:relative;overflow:hidden;background:linear-gradient(130deg,#fdfffa,#f3fbeb);border:2px solid #bedfa3;border-radius:26px;box-shadow:0 16px 44px #7b9bb345;display:flex;flex-direction:column}
+.watermark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:20;overflow:hidden}.watermark img{width:93%;height:94%;object-fit:contain;opacity:.07}.top{position:relative;z-index:2;flex:0 0 112px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 35px;border-bottom:3px solid #cee8f4;background:#fffdfaeb}.brand{display:flex;align-items:center;gap:15px;min-width:0}.brand-icon{width:72px;height:72px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(140deg,#24afcb,#846ee5);color:white;font-size:41px}.brand-title{font:bold 30px/1.15 'Segoe UI',Arial,sans-serif}.brand-sub{font:700 18px/1.2 'Segoe UI';color:#597e99;letter-spacing:1.5px}.righttop{display:flex;align-items:center;gap:17px}.progress{font-weight:800;font-size:27px;color:#2676aa;white-space:nowrap}.button{font-weight:800;font-size:29px;line-height:1.1;padding:16px 25px;min-height:69px;border:2px solid #afd7ed;color:#16486b;background:#fff;border-radius:18px;white-space:nowrap}.button.primary{background:linear-gradient(135deg,#12a4c8,#617ef1);color:#fff;border-color:#42a5dc}.button:hover{filter:brightness(.97)}.button.yellow{background:#fff0b6;border-color:#f0c56f}.button.soft{background:#e8f5ff}.portal{display:inline-flex;align-items:center;justify-content:center;font:bold 24px 'Segoe UI',Arial,sans-serif;color:#087c74;text-decoration:none;background:#e0f9f1;border:2px solid #5dcdb9;border-radius:15px;padding:12px 18px;white-space:nowrap;box-shadow:0 3px 10px #74c8b933}.portal:hover{background:#caf5e7;text-decoration:underline}
+.main{position:relative;z-index:2;flex:1;min-height:0;padding:21px 40px 25px;display:flex;flex-direction:column}.center{display:flex;align-items:center;justify-content:center;text-align:center}.hero{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:27px}.hero h1{margin:0;font:800 74px/1.12 'Segoe Print','Segoe UI',sans-serif;color:#326044}.hero p{font:600 33px/1.3 'Segoe UI';margin:0;max-width:1320px}.hero small{font:700 27px/1.2 'Segoe UI';color:#5a8352}.row{display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap}.page-title{font:800 53px/1.1 'Segoe Print','Segoe UI',sans-serif;text-align:center;margin:16px 0 24px}.instruction-list{display:grid;gap:14px;margin:12px 20px 30px}.instruction{font:650 31px/1.27 'Segoe UI';display:flex;gap:18px;align-items:center}.num{width:50px;height:50px;flex:0 0 50px;display:grid;place-items:center;background:#c0f4dc;border-radius:50%;font-weight:900;color:#087e6f}.notice{font:650 29px/1.24 'Segoe UI';color:#236e61;text-align:center}.push{margin-top:auto}.choose-desc{text-align:center;font-size:30px;margin:0 0 23px}.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;width:100%}.tile{background:#fff;border:3px solid #b4dc9e;border-radius:25px;min-height:258px;padding:25px 10px;color:#356b49;box-shadow:0 10px 15px #a9d59e55}.tile strong{font:800 39px 'Segoe Print','Segoe UI',sans-serif;display:block}.tile span{font-weight:800;font-size:43px;display:block;margin:17px 0}.tile small{font-size:25px}.choose-extra{display:flex;justify-content:center;gap:22px;margin-top:25px}
+.question-layout{height:100%;display:flex;flex-direction:column;gap:9px}.question-top{display:flex;justify-content:space-between;align-items:center;gap:25px;font-size:29px;font-weight:750;color:#447b4a}.question-top .pill{background:#f1e5ff;border-radius:35px;padding:8px 22px}.q-title{font:800 58px/1.12 'Segoe Print','Segoe UI',sans-serif;text-align:center;margin:5px 0 4px}.q-instruction{font:750 33px/1.2 'Segoe Print','Segoe UI',sans-serif;text-align:center;color:#117c74;margin:3px 0}.q-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;padding:12px 0}.q-unanswered{font:700 35px/1.2 'Segoe UI',sans-serif;text-align:center;color:#447f75}.answer{width:100%;border:2px solid #98d9bd;background:#f2fff6c9;border-radius:24px;padding:18px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}.equation{width:100%;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:17px;font:700 43px/1.4 'Segoe Print','Segoe UI',Arial,sans-serif;text-align:center;color:#c62828}.arrow-group{display:inline-flex;min-width:180px;flex-direction:column;align-items:center;justify-content:center}.conditions{font:800 28px/1.15 'Segoe UI',Arial,sans-serif;color:#a35c04}.reaction-arrow{font-size:68px;color:#c62828;line-height:.8}.answer-info{text-align:center;font:750 30px/1.27 'Segoe UI',sans-serif}.answer-note{font:750 29px/1.24 'Segoe UI',sans-serif;text-align:center;color:#704b16;background:#fff7e0;border-radius:16px;padding:8px 16px}.hint{font:750 31px/1.3 'Segoe UI',sans-serif;padding:13px 20px;background:#fff0bcd9;border:2px solid #e4c373;border-radius:18px;text-align:center}.q-actions{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:12px}.q-actions .left,.q-actions .right{display:flex;gap:17px}
+.ref-overlay{position:absolute;inset:0;z-index:40;background:#f9f0ffed;display:flex;flex-direction:column;padding:22px 35px}.ref-title{font:800 42px 'Segoe Print','Segoe UI';display:flex;align-items:center;justify-content:space-between;gap:30px;padding:10px 0 22px}.ref-search{font-size:29px;border:2px solid #9bd8ca;padding:13px 18px;border-radius:16px;background:white;width:100%;margin-bottom:16px}.refs-list{overflow-y:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding-bottom:12px}.ref-item{border:2px solid #b4e2d6;border-radius:16px;background:#fff;padding:16px 19px;display:grid;gap:8px}.ref-item b{font-size:30px}.ref-item span{font-size:27px;font-weight:600;line-height:1.2}.ref-item .cond{font-size:25px;color:#a05d05}.hidden{display:none!important}.orientation{display:none}
+@media(orientation:portrait) and (max-width:850px){.orientation{position:fixed;bottom:3px;left:0;right:0;display:block;text-align:center;font:700 15px Arial;color:#276082;z-index:50;pointer-events:none}}
+
+/* Счётчик располагается между проверкой и навигацией */
+.q-actions .question-progress{display:flex;align-items:center;justify-content:center;white-space:nowrap;flex:0 0 auto;padding:10px 22px;border-radius:16px;background:#dbf8db;border:2px solid #72c98a;color:#167039;font:800 clamp(20px,2.05vw,31px)/1.2 'Segoe UI',Arial,sans-serif;box-shadow:0 4px 10px rgba(38,131,76,.09)}
+.q-actions .left,.q-actions .right{align-items:center}
+.q-actions{justify-content:space-between;gap:10px}
+
+/* Бирюзовая тема алкенов */
+#stage{background:linear-gradient(145deg,#f9fffd 0%,#eafcf6 50%,#e8f7f5 100%)}
+.button.primary{background:linear-gradient(120deg,#00a997,#20c4bb)!important;border-color:#018f87!important;color:white!important}
+.tile:hover{background:#e0fff5!important;border-color:#2ab59f!important}
+.pill{color:#0c7667}
+.q-actions .question-progress{background:#d9fbe6;border-color:#56cb95;color:#126d47}
+.answer{background:#f1fffae8;border-color:#8ed8b9}
+.hint{background:#fff1c9e9}
+
+/* Отличительная палитра алкадиенов: лайм, травяной, тёплый жёлтый */
+#viewport{background:linear-gradient(145deg,#eaf8dc,#fff4db)!important}
+#stage{background:linear-gradient(130deg,#fcfff9,#f0f9e6)!important;border-color:#b6d99e!important}
+.brand-icon{background:linear-gradient(140deg,#63ae60,#f2b657)!important}
+.button.primary{background:linear-gradient(135deg,#2e9f77,#68ba62)!important;border-color:#4fae75!important}
+.tile{border-color:#aedb9d!important;color:#346947!important;background:#fdfff9!important}
+.question-top .pill{background:#e5f6d8!important}
+.q-instruction{color:#367750!important}
+.answer{border-color:#acd4a0!important;background:#f3fff0e8!important}
+.notice{color:#357a53!important}
+
+/* Отдельная палитра тренажёра по бензолу: лаванда, персик и коралл. */
+#viewport{background:linear-gradient(140deg,#f1e9ff,#ffebe7)!important}
+#stage{background:linear-gradient(135deg,#fcfaff,#fff4ef)!important;border-color:#d7b8e6!important}
+.top{background:#fffbffef!important;border-bottom-color:#e6d5f5!important}
+.brand-title,.page-title{color:#663d78!important}
+.brand-icon{background:linear-gradient(140deg,#a17de0,#ef8b9a)!important}
+.button.primary{background:linear-gradient(135deg,#a16dd7,#e9799f)!important;border-color:#bd83db!important}
+.button.soft{background:#f4eaff!important;border-color:#d5b5eb!important;color:#653e86!important}
+.button.yellow{background:#ffe6bc!important}
+.portal{background:#f2e6ff!important;border-color:#bb91de!important;color:#6b328c!important}
+.tile{background:#fffaff!important;border-color:#d7b8e9!important;color:#6c4884!important}
+.tile:hover{background:#f4eaff!important;border-color:#b08bd7!important}
+.question-top{color:#684e81!important}
+.question-top .pill{background:#f0e4ff!important}
+.q-title{color:#513968!important}
+.q-unanswered{color:#705b8e!important}
+.answer{background:#fffafaef!important;border-color:#e7bbcc!important}
+.answer-note{background:#fff0d9!important}
+.hint{background:#fff0d9e9!important;border-color:#eccd97!important}
+.ref-overlay{background:#fcf4fffa!important}
+.ref-item{background:#fffaff!important;border-color:#d7bce7!important}
+.q-actions .question-progress{background:#dcf8e4!important;border-color:#78c995!important;color:#167039!important}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ecf7fa">
+<title>Алкены — итоговый контроль знаний · М.И.Р.</title>
+
+<link rel="stylesheet" href="data/style.css"><style id="mirBootStyle">body{visibility:hidden}</style></head>
+<body>
+<div id="app">
+
+<header class="topbar">
+ <div class="brandline"><img class="brandlogo" src="data/logo-7500ea49fb89.webp" alt="Логотип М.И.Р."><div><div class="brandtitle">М.И.Р. · Химия</div><div class="branddesc">Итоговый контроль знаний · Алкены</div></div></div>
+ <div class="topright"><span class="top-progress" id="topProgress"></span><a class="portal" href="https://portalmir.by/" target="_blank" rel="noopener noreferrer">Портал М.И.Р.</a></div>
+</header>
+<main id="intro" class="screen screen-intro active" aria-label="Начало теста">
+ <div class="hero">
+  <div class="eyebrow">Итоговая викторина М.И.Р.</div>
+  <h1>Химические свойства алкенов</h1>
+  <h2>Контроль знаний</h2>
+  <p class="hero-copy">20 случайных вопросов из банка 40 · 4 варианта ответа · 1 правильный ответ.<br>Результат и правильные ответы появятся только после завершения работы.</p>
+  <div class="hero-highlights"><span>5 случайных вопросов из каждого раздела</span><span>Новые сочетания вариантов</span><span>Подробная работа над ошибками</span></div>
+  <button id="startBtn" class="btn btn-primary btn-large" type="button">Начать контроль</button>
+ </div>
+</main>
+<section id="quiz" class="screen quiz-screen" aria-label="Вопросы итогового контроля">
+ <div class="quiz-top"><span id="quizCount" class="count-pill"></span><span id="answeredCount"></span></div>
+ <div id="questionNav" class="question-progress" aria-label="Переход по вопросам"></div>
+ <div class="question-zone"><h1 id="questionTitle" class="question-title"></h1><div id="questionScheme" class="question-scheme" aria-label="Схема реакции"></div></div>
+ <div id="choices" class="choices" role="group" aria-label="Варианты ответа"></div>
+ <div class="quiz-bottom"><button id="prevBtn" class="btn btn-quiet" type="button">← Назад</button><span class="bottom-note">Ответы проверяются только после завершения контрольной работы</span><button id="nextBtn" class="btn btn-primary" type="button">Далее →</button></div>
+ <div id="notice" class="notice" role="status" hidden></div>
+</section>
+<section id="results" class="screen results-screen" aria-label="Результаты контроля">
+ <div class="results-panel">
+  <h1>Результаты итогового контроля</h1>
+  <div class="score"><span id="scoreValue"></span><small> / 20</small></div>
+  <div class="score-caption" id="scoreCaption"></div>
+  <div class="results-counts"><div class="stat">Правильных: <b id="correctTotal"></b></div><div class="stat wrong">Неправильных: <b id="wrongTotal"></b></div></div>
+  <div class="number-groups"><div class="number-box"><h2>Правильные ответы — номера заданий</h2><div class="numlist" id="correctNumbers"></div></div><div class="number-box"><h2>Ошибки — номера заданий</h2><div class="numlist" id="wrongNumbers"></div></div></div>
+  <div class="results-note">Номера относятся к порядку вопросов именно в этой попытке.</div>
+  <button id="reviewBtn" class="btn btn-primary btn-large" type="button">Работа над ошибками →</button>
+ </div>
+</section>
+<section id="review" class="screen review-screen" aria-label="Работа над ошибками" tabindex="-1">
+ <div class="review-content"><h1 class="review-heading">Работа над ошибками</h1><p id="reviewLead" class="review-lead"></p><div id="reviewList"></div>
+  <div class="review-finish"><p id="reviewFinishText">Разбор завершён. Теперь можно пройти контроль ещё раз с новым набором вопросов.</p><div id="reviewSentinel" class="review-sentinel" aria-hidden="true"></div><button id="repeatBtn" class="btn btn-primary btn-large new-attempt" type="button">Новая попытка ↻</button></div>
+ </div>
+</section>
+</div>
+
+<img class="brand-watermark" src="data/logo-11e4ec90e7e3.webp" alt="" aria-hidden="true">
+<script>
+(function(){
+ const reveal=()=>document.getElementById('mirBootStyle')?.remove();
+ function message(text){document.body.replaceChildren();const el=document.createElement('div');el.style.cssText='position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#eaf3f5;padding:24px;text-align:center;font:20px/1.5 Segoe UI,Arial,sans-serif;color:#153450;z-index:2147483647';el.textContent=text;document.body.append(el);reveal();}
+ if(!['http:','https:'].includes(location.protocol)){message('Тренажёр работает только на сайте. Откройте его через интернет.');return;}
+ const base=new URL('./data/',location.href);
+ async function start(){
+  const r=await fetch(new URL('questions.json',base),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
+  globalThis.__mirQuestionBank=await r.json();
+  await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('engine.js',base).href;script.onload=resolve;script.onerror=reject;document.body.append(script);});
+  delete globalThis.__mirQuestionBank;reveal();
+ }
+ start().catch(e=>{console.error(e);message('Не удалось загрузить тренажёр. Проверьте подключение к интернету и обновите страницу.');});
+})();
+</script></body>
+</html>
